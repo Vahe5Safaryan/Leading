@@ -537,60 +537,60 @@ input, textarea {
 
 /* BRAND START  -------------------------------------------*/
 
-/*.brand-section{*/
-/*    text-align: center;*/
-/*    margin-bottom: 30px;*/
-/*    position: relative;*/
-/*    width: 100%;*/
-/*}*/
+.brand-section{
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+}
 
-/*.brand-box img{*/
-/*    display: inline-block;*/
-/*    max-width: 100%;*/
-/*    height: auto;*/
-/*}*/
-/*.brand-image {*/
-/*    width: 140px;*/
-/*    height: 100px;*/
-/*    display: inline-flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
+.brand-box img{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+.brand-image {
+    width: 140px;
+    height: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/*.brand-box h4{*/
-/*    font-weight: 600;*/
-/*    font-size: 20px;*/
-/*    line-height: 24px;*/
-/*    color: #000000;*/
-/*}*/
+.brand-box h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
 
-/*.brand-box i{*/
-/*    font-size: 20px;*/
-/*    color: #FC6144;*/
-/*}*/
+.brand-box i{
+    font-size: 20px;
+    color: #FC6144;
+}
 
-/*.brand-box h5{*/
-/*    font-weight: 600;*/
-/*    font-size: 20px;*/
-/*    line-height: 24px;*/
-/*    color: #000000;*/
-/*}*/
+.brand-box h5{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
 
-/*.brand-box p{*/
-/*    font-weight: 400;*/
-/*    font-size: 14px;*/
-/*    line-height: 26px;*/
-/*    color: #000000;*/
-/*    margin-top: 10px;*/
-/*}*/
-/*.brand-box a{*/
-/*    font-weight: 400;*/
-/*    font-size: 14px;*/
-/*    line-height: 26px;*/
-/*    color: #295AC2;*/
-/*    margin-top: 10px;*/
-/*}*/
-/*!* BRAND END *!*/
+.brand-box p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 10px;
+}
+.brand-box a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #295AC2;
+    margin-top: 10px;
+}
+/* BRAND END */
 
 
 
@@ -1762,7 +1762,6 @@ input, textarea {
     .brand-section{
         margin-top: 60px;
     }
-
 
     .section-for-qas {
         justify-content: center;
