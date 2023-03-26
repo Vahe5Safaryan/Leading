@@ -31,7 +31,7 @@ function timer() {
 timer()
 let x = setInterval(function () {
     timer()
-}, 100000);
+}, 1000);
 
 // HEADER TIMER END //
 

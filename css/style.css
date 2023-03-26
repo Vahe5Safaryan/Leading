@@ -490,16 +490,6 @@ input, textarea {
     right: 0;
 }
 
-/*.counter-section .counter-box{*/
-/*    width: 100%;*/
-/*    border-right: 1px solid red;*/
-/*    padding: 10px 0;*/
-/*}*/
-/*.l-child{*/
-/*    border-right: none !important;*/
-/*}*/
-
-
 .counter-box h4{
     font-weight: 700;
     font-size: 36px;
@@ -594,7 +584,7 @@ input, textarea {
 }
 /* LINE END */
 
-/* BRAND START  -------------------------------------------*/
+/* BRAND START */
 
 .brand-section{
     text-align: center;
@@ -662,16 +652,58 @@ input, textarea {
     background: #FF5555;
     border-radius: 10px;
 }
+
+.way-bg-ng{
+    mix-blend-mode: screen;
+    opacity: 0.5;
+    position: absolute;
+    background-image: url("../images/way/Path-ng.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: bottom 19% left 55%;
+    background-size: 824px 698px ;
+    background-clip: padding-box;
+}
+
+.way-bg-soft{
+    mix-blend-mode: screen;
+    opacity: 0.5;
+    position: absolute;
+    background-image: url("../images/way/Path-dev.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: bottom 20% left 32%;
+    background-size: 561px 520px ;
+    background-clip: padding-box;
+}
+
+.way-bg-dev{
+    mix-blend-mode: screen;
+    opacity: 0.5;
+    position: absolute;
+    background-image: url("../images/way/Path-dev.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: bottom left 400px;
+    background-size: 1193px 1023px;
+    background-clip: padding-box;
+}
+
 .way-section-software{
     background: #3E4ED7;
 }
 .way-section-developer{
     background: #B13ED6;
+    position: relative;
 }
 
 .way-section-text{
     display: flex;
     flex-direction: row;
+    z-index: 999;
 }
 
 .way-section-img img{
@@ -688,13 +720,13 @@ input, textarea {
 }
 
 .text-width-eng{
-    width: 440px;
+    max-width: 440px;
 }
 .text-width-soft{
-    width: 431px;
+    max-width: 431px;
 }
 .text-width-full{
-    width: 431px;
+    max-width: 431px;
 }
 .way-btn-color-eng a{
     color: #FF5555;
@@ -707,7 +739,7 @@ input, textarea {
 }
 
 .m-content{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .way-text-box{
@@ -733,11 +765,11 @@ input, textarea {
     line-height: 24px;
     color: #FFFFFF;
     margin-top: 30px;
-    width: 326px;
+    max-width: 326px;
 }
-/*.way-section-content{*/
-/*    margin-left: 15px;*/
-/*}*/
+.way-section-content{
+    max-width: 190px;
+}
 
 .way-section-content-session ul li{
     font-weight: 600;
@@ -780,7 +812,6 @@ input, textarea {
     text-align: left;
     margin-top: 10px;
 }
-
 
 .other-timer{
     margin-top: 40px;
@@ -838,23 +869,12 @@ input, textarea {
     margin-right: 10px;
 }
 
-/*.join-box-info{*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    padding-left: 10px;*/
-/*}*/
-
-
-
 .join-box-info {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
     margin-top: 15px;
 }
-
-
-
 
 .join-box-info-right{
     display: flex;
@@ -865,8 +885,6 @@ input, textarea {
     justify-content: center;
     align-items: center;
 }
-
-
 
 .join-box-info-right-text p{
     font-weight: 400;
@@ -928,6 +946,9 @@ input, textarea {
     column-gap: 100px;
 }
 
+.for-qas-sesion ul{
+    width: 190px;
+}
 
 .for-qas-info-pan ul{
     margin-right: 15px;
@@ -942,7 +963,6 @@ input, textarea {
     margin: 0;
 }
 /* FOR-QAS END */
-
 
 
 /* LEVEL START */
@@ -996,12 +1016,11 @@ input, textarea {
 }
 /* FEATURED END */
 
-
-
 /* REVIEWS START */
-.reviews-box{
-    margin-top: 60px;
+.reviews-section{
+    padding: 60px 40px;
 }
+
 .reviews-separate{
     padding:0 20px ;
 }
@@ -1069,12 +1088,11 @@ input, textarea {
 }
 /* REVIEWS END */
 
-
 /* WHO HIRE START */
 .who-hire{
     background: #FFFFFF;
     border-radius: 10px;
-    padding: 80px 0;
+    padding: 90px 60px ;
 }
 
 .who-hire-text h2{
@@ -1091,7 +1109,7 @@ input, textarea {
     align-items: center;
     flex-wrap: wrap;
     gap: 75px;
-    padding: 85px;
+    /*padding: 85px;*/
 }
 
 .who-hire-link{
@@ -1104,11 +1122,6 @@ input, textarea {
     text-align: center;
 }
 /* WHO HIRE END */
-
-
-
-
-
 
 /* BOOTCAMP START */
 .bootcamp-section{
@@ -1192,9 +1205,7 @@ input, textarea {
 
 /* BOOTCAMP END */
 
-
 /* FOOTER START*/
-
 .footer-section{
     padding: 60px 40px;
 }
@@ -1253,7 +1264,6 @@ input, textarea {
     min-width: 110px;
 }
 
-
 .footer-box-info-number p{
     padding-top: 10px;
     font-weight: 400;
@@ -1290,9 +1300,7 @@ input, textarea {
 .footer-line{
     display: none;
 }
-
 /* FOOTER END */
-
 
 
 /* **** MEDIA  START **** */
@@ -1349,7 +1357,9 @@ input, textarea {
         margin-right: 30px;
     }
 
-
+    .for-qas-sesion ul{
+        width: 100%;
+    }
     .for-qas-info{
         flex-direction: column;
     }
@@ -1386,39 +1396,31 @@ input, textarea {
         justify-content: flex-start;
     }
 
-
-    .way-info {
-        flex-wrap: wrap;
+    .way-section-content {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: end;
+        column-gap: 60px;
+        align-items: center;
+        margin-top: 30px;
+        max-width: 100%;
     }
-    .way-info-box ul{
+    .way-section-content-session ul{
         display: flex;
-        width: 100%;
         flex-direction: row;
-        margin-top: 10px;
-        margin-right: 50px;
     }
-    .way-info-box{
-        margin-top: 70px;
-        flex-direction: row;
-        width: 100%;
-    }
-    .way-info-box ul li{
+    .way-section-content-session ul li{
         border: none;
+        padding: 0 30px 0 0;
         font-weight: 400;
         font-size: 10px;
         line-height: 12px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #FFFFFF;
         mix-blend-mode: normal;
         opacity: 0.5;
     }
-    .way-action-box{
-        margin-top: 0;
-    }
-    .for-qas{
-        column-gap: 0px;
-    }
+
     .way-section{
         display: grid;
         grid-template-columns: auto;
@@ -1429,9 +1431,6 @@ input, textarea {
         margin-left: 20px;
     }
 
-    .way-section-content-session{
-        display: none;
-    }
     .for-qas-bg {
         position: absolute;
         right: 15%;
@@ -1491,7 +1490,7 @@ input, textarea {
 
     .who-hire-logos{
         gap: 35px;
-        padding: 35px;
+        /*padding: 35px;*/
     }
 
     .footer-section {
@@ -1605,16 +1604,11 @@ input, textarea {
         padding: 0;
         margin: 0;
     }
-
-
-    .way-section-content-session{
-        display: block;
-        margin-top: 0;
-    }
-    .way-section-content{
+    .way-section-content {
         display: grid;
         grid-template-columns: auto auto;
-        justify-content: end;
+        justify-content: space-between;
+        column-gap: 10px;
         align-items: center;
         margin-top: 30px;
     }
@@ -1633,11 +1627,6 @@ input, textarea {
         mix-blend-mode: normal;
         opacity: 0.5;
     }
-
-
-
-
-
     .way-text-box h2{
         font-weight: 700;
         font-size: 36px;
@@ -1653,17 +1642,22 @@ input, textarea {
         border: none;
         padding: 0 15px 0 0;
     }
-    .way-section-content{
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-between;
-    }
+
     .way-section-content-session{
         margin-top: 0;
     }
     .way-section-text img{
         width: 180px;
         height: 180px;
+    }
+
+    .for-qas-sesion{
+        display: block;
+        margin-top: 0;
+    }
+
+    .reviews-section{
+        padding: 60px 20px;
     }
 
     .for-qas-bg{
@@ -1745,19 +1739,18 @@ input, textarea {
     }
 
     .other-timer div {
-        width: 55px;
-        height: 65px;
-        padding: 10px;
+        width: 70px;
+        height: 85px;
+        padding: 14px;
         font-weight: 700;
-        font-size: 28px;
-        line-height: 35px;
+        font-size: 36px;
+        line-height: 43px;
     }
-    .other-timer p{
+    .other-timer p {
         font-weight: 400;
-        font-size: 10px;
-        line-height: 21px;
+        font-size: 13px;
+        line-height: 26px;
     }
-
 
     .brand-section{
         background: #FFFFFF;
@@ -1779,9 +1772,16 @@ input, textarea {
         display: none;
     }
 
-
     .way-action-btn{
         display: none;
+    }
+    .way-section-text{
+        z-index: 999;
+    }
+    .way-section-img{
+        position: absolute;
+        right: -10px;
+        z-index: -1;
     }
 
     .join-box-timer h2{
@@ -1853,6 +1853,11 @@ input, textarea {
         margin-top: 30px;
     }
 
+    .who-hire{
+        background: #FFFFFF;
+        border-radius: 10px;
+        padding: 50px;
+    }
 
     .who-hire-logos{
         display: grid;
@@ -1861,7 +1866,6 @@ input, textarea {
         align-items: center;
         flex-wrap: wrap;
         gap: 30px;
-        padding: 30px;
     }
     .way-section {
         padding: 20px 20px;
@@ -1871,14 +1875,10 @@ input, textarea {
         flex-direction: row-reverse;
     }
     .way-text-box{
-        width: 320px;
+        max-width: 310px;
         padding: 0;
         margin: 0;
         position: relative;
-    }
-    .way-section-img{
-        position: absolute;
-        right: -30px;
     }
 
     .bootcamp-section {
@@ -1895,7 +1895,6 @@ input, textarea {
     .bootcamp-btn a{
         width: 260px;
     }
-
 
     .input-primary {
         width: 260px;
@@ -1978,7 +1977,6 @@ input, textarea {
     .join-box-info-right-text {
         width: 170px;
     }
-
 
     .hero-action {
         margin-top: 25px;
