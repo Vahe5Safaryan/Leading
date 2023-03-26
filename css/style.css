@@ -1592,6 +1592,31 @@ input, textarea {
         line-height: 43px;
     }
 
+    .way-section-content {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        column-gap: 10px;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .way-bg-ng{
+        background-position: bottom 187px left 127px;
+        background-size: 660px 481px ;
+    }
+    .way-bg-soft{
+        background-position: bottom -68px left -230px;
+        background-size: 561px 559px;
+    }
+    .way-bg-dev{
+        background-position: bottom -103px left 100px;
+        background-size: 559px 479px;
+    }
+    .way-section-content-session ul{
+        display: flex;
+        flex-direction: row;
+    }
     .way-section{
         padding: 30px 30px;
     }
@@ -1603,18 +1628,6 @@ input, textarea {
         max-width: 100%;
         padding: 0;
         margin: 0;
-    }
-    .way-section-content {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-between;
-        column-gap: 10px;
-        align-items: center;
-        margin-top: 30px;
-    }
-    .way-section-content-session ul{
-        display: flex;
-        flex-direction: row;
     }
     .way-section-content-session ul li{
         border: none;

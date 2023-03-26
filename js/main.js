@@ -32,18 +32,15 @@ timer()
 let x = setInterval(function () {
     timer()
 }, 1000);
-
 // HEADER TIMER END //
 
 
 //  SLICK SLIDER START //
-
 $(".slider").slick({
     slidesToShow: 1,
     arrows:false,
     fullscreen: true,
 });
-
 //  SLICK SLIDER END //
 
 
@@ -204,20 +201,18 @@ $('.reviews-box').slick({
         }
     ]
 });
-
 //  REVIEWS SECTION END //
 
 
 
-
+//  TELL. NUMBERS START
 const input = document.querySelector("#phone");
-
 window.intlTelInput(input, {
     initialCountry: "ru",
     preferredCountries: ["ru", "us", "gb", "de"],
     utilsScript:"https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.2/build/js/utils.js"
 });
-
+//  TELL. NUMBERS END
 
 
 
