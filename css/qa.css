@@ -1,0 +1,200 @@
+body{
+    background: #FBF5FD;
+}
+
+.nav-links a.active{
+    border-bottom: 2px solid #3E4ED7;
+    padding-bottom: 10px;
+}
+
+
+.header-box-qa{
+    background: #3E4ED7;
+}
+
+
+.qa-way-section {
+    padding: 60px 60px;
+    background: #3E4ED7;
+}
+
+.qy-way-bg-ng {
+    mix-blend-mode: screen;
+    opacity: 0.5;
+    position: absolute;
+    background-image: url(../images/manual/way/qa-bg.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: bottom 98% left 59%;
+    background-size: 560px 480px;
+    background-clip: padding-box;
+}
+
+
+
+.qa-way-section-img {
+    max-height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 12%;
+    top: 25%;
+}
+.qa-way-section-img img{
+    object-fit: cover;
+    object-position: top;
+    background: transparent;
+    border-radius: 0;
+    height: 630px;
+    z-index: -1;
+}
+
+
+.counter-box-qa h4{
+    color: #295AC2;
+}
+
+
+.about-section-qa{
+    overflow-x: auto;
+}
+.about-section-qa .about-box{
+    min-width: 297px;
+    padding-bottom: 20px;
+}
+
+
+.real-world-heading{
+    margin-bottom: 35px;
+}
+.ticket-section-text{
+    margin-bottom: 80px;
+}
+.ticket-section-text p{
+    width: 845px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.real-world-box h4{
+    color: #295AC2;
+}
+
+
+.qa-timer div {
+    background: #295AC2;
+}
+
+.qa-time-box.active .active-time{
+    background: #295AC2;
+}
+
+.other-timer .separator span {
+    background: #295AC2;
+}
+
+
+
+.qa-assistance-box h4{
+    color: #295AC2;
+}
+
+
+.qa-skills h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    margin: 60px 40px;
+}
+
+.skills-box-btn button{
+    background:  #3E4ED7;
+}
+
+
+.qa-faq-sections{
+    grid-template-columns: auto auto auto auto;
+}
+
+.qa-fax-box h4{
+    color: #295AC2;
+}
+
+.qa-faq-section-accordion h4:hover{
+    color: #295AC2;
+}
+
+
+/* **** MEDIA  START **** */
+@media screen and (max-width: 1200px) {
+    .qa-way-section-img {
+        max-height: 330px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+    .qa-way-section-img img{
+        bottom: -65%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .qa-way-section {
+        padding: 20px;
+        background: #3E4ED7;
+    }
+    .qa-way-section-img {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        position: absolute;
+        left: -5%;
+        top: 5%;
+    }
+    .qa-way-section-img img {
+        border-radius: 50% !important;
+    }
+    .way-section-text img{
+        width: 180px;
+        height: 180px;
+        bottom: unset;
+        top: 0;
+    }
+    .way-bg-ng {
+        background-position: bottom 0 left 0;
+    }
+
+    .qa-skills h4{
+        margin: 60px 26px;
+    }
+}
+
+@media screen and (max-width: 577px) {
+    .qa-way-section-img {
+        position: absolute;
+        right: -10px;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .qa-way-section-img {
+        position: absolute;
+        left: 10%;
+        top: 5%;
+    }
+}
+
+/* ****  MEDIA  END **** */
+
+
+
+

@@ -27,7 +27,6 @@ function timer() {
         // document.getElementsByClassName(".timers").innerHTML = "EXPIRED";
     }
 }
-
 timer()
 let x = setInterval(function () {
     timer()
@@ -38,10 +37,44 @@ let x = setInterval(function () {
 //  SLICK SLIDER START //
 $(".slider").slick({
     slidesToShow: 1,
-    arrows:false,
+    arrows: false,
     fullscreen: true,
 });
 //  SLICK SLIDER END //
+
+
+//  PACIFIC TIME START //
+const boxes = document.getElementsByClassName('pacific-time-box');
+for (let i = 0; i < boxes.length; i++) {
+    boxes[i].addEventListener('click', function () {
+        boxes[i].classList.toggle('active')
+    })
+}
+//  PACIFIC TIME END //
+
+
+// FAQ SHOW ALL START //
+let skillsBtns = document.getElementsByClassName("expend-button");
+let skillsSection = document.querySelector(".skills-section");
+for(let skillsBtn of skillsBtns) {
+    skillsBtn.addEventListener("click", function () {
+        skillsSection.classList.toggle('expended')
+    });
+}
+// FAQ SHOW ALL END //
+
+
+
+//  ACCARDION START //
+const faqAccordion = document.querySelectorAll('.faq-section-accordion-box')
+
+for (let i = 0; i < faqAccordion.length; i++) {
+    faqAccordion[i].addEventListener("click", function (event) {
+        event.currentTarget.classList.toggle('ac tive')
+    })
+}
+//  ACCARDION END //
+
 
 
 // COUNTER SECTION START //
@@ -89,21 +122,23 @@ $('.counter-section').slick({
 
 
 //  Counter start //
-let num = document.querySelectorAll(".counterup")
-let newHeading = Array.from(num)
-newHeading.map((item) => {
-    let count = 0
-    function counterup() {
-        count++
-        item.innerHTML = count
-        if (count == item.dataset.number) {
-            clearInterval(stop)
-        }
-    }
-    let stop = setInterval(function() {
-        counterup()
-    }, 1);
-})
+// let num = document.querySelectorAll(".counterup")
+// let newHeading = Array.from(num)
+// newHeading.map((item) => {
+//     let count = 0
+//
+//     function counterup() {
+//         count++
+//         item.innerHTML = count
+//         if (count == item.dataset.number) {
+//             clearInterval(stop)
+//         }
+//     }
+//
+//     let stop = setInterval(function () {
+//         counterup()
+//     }, 1);
+// })
 // COUNTER SECTION START //
 
 
@@ -158,7 +193,6 @@ $('.brand-section').slick({
 //  BRAND SECTION START //
 
 
-
 //  REVIEWS SECTION START //
 $('.reviews-box').slick({
     dots: true,
@@ -204,15 +238,64 @@ $('.reviews-box').slick({
 //  REVIEWS SECTION END //
 
 
+//  TEACHERS SECTION START //
+$('.teachers-box-section').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    nextArrow: false,
+    prevArrow: false,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
 
-//  TELL. NUMBERS START
+            }
+        },
+        {
+            breakpoint: 998,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+//  TEACHERS SECTION END //
+
+
+//  TELL. NUMBERS START (window.)
 const input = document.querySelector("#phone");
-window.intlTelInput(input, {
+intlTelInput(input, {
     initialCountry: "ru",
     preferredCountries: ["ru", "us", "gb", "de"],
-    utilsScript:"https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.2/build/js/utils.js"
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.2/build/js/utils.js"
 });
 //  TELL. NUMBERS END
+
+
+
+
+
 
 
 
