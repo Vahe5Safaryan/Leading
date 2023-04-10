@@ -185,6 +185,10 @@ const blur = document.querySelector('.blur')
 for (let i = 0; i < primaryIcon.length; i++) {
     primaryIcon[i].addEventListener('click', function () {
         mediaRightMenu.style.right = "0px";
+<<<<<<< HEAD
+=======
+        blur.classList.toggle('d-none');
+>>>>>>> 6b058bbb9e8a17a599a4dc8d3832807918d18abe
     });
 }
 
