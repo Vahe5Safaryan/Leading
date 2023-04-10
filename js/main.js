@@ -177,15 +177,14 @@ if (headerSectionBtn) {
 
 //  Menu in right START //
 const mediaRightMenu = document.querySelector('.media-right-menu')
+const menuMobile = document.querySelectorAll('.menu-mobile ')
 const primaryIcon = document.querySelectorAll('.primary-icon')
-const menuMobile  = document.querySelectorAll('.menu-mobile ')
 const headerSectionClosed = document.querySelector('.header-section-closed')
 const blur = document.querySelector('.blur')
 
 for (let i = 0; i < primaryIcon.length; i++) {
     primaryIcon[i].addEventListener('click', function () {
         mediaRightMenu.style.right = "0px";
-        blur.classList.toggle('d-block');
     });
 }
 
@@ -199,7 +198,7 @@ for (let i = 0; i < menuMobile.length; i++) {
 headerSectionClosed.addEventListener('click', function () {
     if (headerSectionClosed) {
         mediaRightMenu.style.right = "-400px";
-        blur.classList.toggle('d-block');
+        blur.classList.toggle('d-none');
     }
 })
 
@@ -207,6 +206,8 @@ blur.addEventListener('click', function () {
     blur.classList.toggle('d-block');
     mediaRightMenu.style.right = "-400px";
 });
+
+
 //  Menu in right END //
 
 
