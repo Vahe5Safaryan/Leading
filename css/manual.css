@@ -1,9 +1,80 @@
 body{
     background: #FFF6F6;
 }
+.header-box {
+    background: #FF5555;
+}
+
+/* Header Section START */
+.header-section{
+    position: fixed;
+    top: 0;
+    transform: translate(-3%, 0);
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(13.5914px);
+    padding: 10px 50px;
+    display: none;
+}
+.header-section-top{
+    position: relative;
+    display: flex;
+}
+
+.header-section-logo img{
+    display: inline-block;
+    max-height: 26px;
+    height: auto;
+}
+
+.header-section-cours{
+    padding: 0 15px;
+}
+.header-section-cours h4{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+}
+.header-section-btn img{
+    display: inline-block;
+    max-height: 12px;
+    height: auto;
+}
+.header-section-top > div:last-child{
+    margin-left: auto;
+}
+
+.header-section-ships {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+}
+.header-section-ships ul{
+    column-count: 3;
+}
+.header-section-ships ul li{
+    border-bottom: 1px solid #cfc2c2;
+    mix-blend-mode: normal;
+    width: 177px;
+    max-width: 100%;
+    padding: 13px 20px 13px 0;
+}
+.header-section-ships ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+/* Header Section END */
+
 
 .nav-links a.active{
-    border-bottom: 2px solid #FC6144;
+    border-bottom: 2px solid #FF5555;
     padding-bottom: 10px;
 }
 
@@ -13,12 +84,13 @@ body{
     display: grid;
     grid-template-columns: auto auto;
     flex-direction: row;
-    padding: 90px 60px;
+    padding: 60px 60px;
 }
 
 .way {
     padding-top: 20px;
     overflow: hidden;
+    margin-bottom: 40px;
 }
 
 .way-text-box {
@@ -34,7 +106,20 @@ body{
 .text-width-eng {
      max-width: 100%;
 }
+.from-sale h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
 
+.way-bg-ng {
+    background-position: bottom -10% left 85%;
+}
+.enginer-gradient{
+    display: none;
+}
 .way-section-img {
     max-height: 330px;
     display: flex;
@@ -49,10 +134,11 @@ body{
     object-position: top;
     background: transparent;
     border-radius: 0;
-    height: 550px;
+    height: 685px;
     position: absolute;
     z-index: -1;
-    bottom: -30%;
+    left: 40%;
+    top: -25%;
 }
 
 .way-section-content {
@@ -64,7 +150,7 @@ body{
     z-index: 2;
 }
 .hero-action a{
-    margin-right: 20px;
+    margin: 0 20px 20px 0;
 }
 /* Way End */
 
@@ -81,6 +167,9 @@ body{
 
 .counter-box-manual{
     padding: 30px 0;
+}
+.counter-manual{
+    margin-bottom: 90px;
 }
 
 .counter-bordered-manual{
@@ -135,7 +224,7 @@ body{
 
 /* Job Start */
 .job-ready-heading h2{
-    text-align: right;
+    text-align: left;
  }
 .job-ready-section{
     display: flex;
@@ -158,11 +247,33 @@ body{
 }
 
 .job-ready-text{
-    margin-top: 90px;
+    margin-top: 35px;
     position: relative;
-    max-width: 406px;
-    width: 100%;
+    /*max-width: 406px;*/
+    width: 406px;
+    max-width: 100%;
 }
+.job-ready-text p{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    text-align: left;
+    width: 366px;
+}
+.job-ready-text ul li{
+    padding-bottom: 10px;
+    display: flex;
+}
+.job-ready-text ul li i{
+    display: inline-block;
+    vertical-align: top;
+    color: #FF5555;
+    font-size: 7px;
+    margin: 10px 13px 0 0;
+}
+
 .job-ready-img{
     display: flex;
     justify-content: center;
@@ -222,11 +333,8 @@ body{
 .completely-ready-text p {
     text-align: left;
     padding: 10px 0;
-
 }
 /* Job End */
-
-
 
 /* Pacifiq Start */
 .pacific-time{
@@ -363,6 +471,7 @@ body{
     text-align: center;
     color: #000000;
     padding: 10px 0;
+    height: 60px;
 }
 .teacher-box p{
     font-weight: 400;
@@ -400,7 +509,7 @@ body{
     font-size: 36px;
     line-height: 43px;
     text-align: center;
-    color: #FC6144;
+    color: #FF5555;
     white-space: nowrap;
 }
 .assistance-box p{
@@ -411,7 +520,7 @@ body{
     color: #000000;
     white-space: nowrap;
 }
-.prim-box-line{
+.schedule-box-line{
     width: 2px;
     height: 93px;
     background: #295AC2;
@@ -423,6 +532,20 @@ body{
 .assistance-wrapper {
     display: flex;
     align-items: center;
+}
+
+.assistance-box:not(:last-child)::after{
+    content: " ";
+    display: block;
+    width: 93px;
+    height: 2px;
+    background: #295AC2;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    right: -20%;
 }
 /* Assistance End */
 
@@ -449,7 +572,6 @@ body{
     width: 100%;
 }
 /* Counter End */
-
 
 /* Peoples Start */
 .peoples-lives-section-heading{
@@ -528,9 +650,9 @@ body{
 .skills-box-btn{
     display: none;
 }
-.skills-box-btn button{
+.skills-box-btn button {
     background: #FF5555;
-    border-radius: 10px;
+    border-radius: 32px;
     text-align: center;
     color: #fff;
     font-weight: 600;
@@ -539,7 +661,7 @@ body{
     padding: 20px 0;
     margin: 20px 0;
     cursor: pointer;
-    width: 100%;
+    width: 200px;
     max-width: 100%;
     border: none;
     outline: none;
@@ -585,7 +707,7 @@ body{
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    color: #FC6144;
+    color: #FF5555;
     margin-bottom: 17px;
 }
 .faq-section p{
@@ -630,7 +752,7 @@ body{
     transition: 0.3s;
 }
 .faq-section-accordion-box h4:hover{
-    color: #FC6144;
+    color: #FF5555;
 }
 
 .faq-section-accordion-box p{
@@ -657,7 +779,6 @@ body{
     transform: rotate(180deg);
 }
 /* Faq Accordion End */
-
 
 /* Learn Start */
 .learn-heading{
@@ -695,10 +816,106 @@ body{
 }
 
 .skills-section.expended {
-    max-height: 1500px !important;
+    max-height: 1630px !important;
 }
 /* Bootcamp End */
 
+.manual-timer div {
+    background: #FF5555;
+}
+
+
+/* Schedule Start  */
+.schedule-section{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:  25px 25px;
+    background: #fff;
+    column-gap: 40px;
+}
+
+.schedule-box2, .schedule-box3{
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 40px;
+}
+.schedule-box{
+    position: relative;
+    white-space: nowrap;
+}
+.schedule-box-bordered{
+    min-width: 2px;
+    height: 123px;
+    background: #EAEFF9;
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+.schedule-box p{
+    font-size: 16px;
+    line-height: 26px;
+}
+.schedule-box h4{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #FF5555;
+}
+.schedule-box span{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999999;
+}
+.schedule-line{
+    display: none;
+}
+/* Schedule End  */
+
+/* Schedule Media Start */
+.media-section-section{
+    padding: 40px;
+    background: #fff;
+    max-width: 100%;
+    width: 100%;
+    display: none;
+}
+
+.media-schedule-box-big{
+    padding: 20px 0 25px;
+    border-bottom: 2px solid #EAEFF9;
+}
+
+.schedule-boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 40px;
+    padding: 20px 0 25px;
+}
+
+.media-schedule-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.media-box{
+    text-align: center;
+    padding-right: 20px;
+}
+
+.m-b-bordered{
+   border-right: 2px solid #EAEFF9;
+}
+/* Schedule Media End */
 
 /* **** MEDIA  START **** */
 @media screen and (max-width: 1200px) {
@@ -716,8 +933,10 @@ body{
         column-gap: 80px;
     }
 }
-
 @media screen and (max-width: 1024px) {
+    .header-section{
+        transform: translate(-1%, 0);
+    }
     .way-section-content {
         justify-content: flex-start;
         column-gap: 60px;
@@ -745,25 +964,25 @@ body{
     .way-section{
         display: grid;
         grid-template-columns: auto;
-        padding: 40px 0px 40px 40px;
+        padding: 40px 0 40px 40px;
     }
     .way-action-btn {
         margin-top: 0;
         margin-left: 20px;
     }
-
-    .way-section-img {
-        max-height: 330px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 100%;
+    .way-bg-ng {
+        background-position: bottom 15% left 190%;
     }
     .way-section-img img{
-        bottom: -40%;
+        left: 5%;
+        top: -18%;
+    }
+    .way-section {
+        overflow: visible;
     }
 
     .job-ready-section{
+        padding: 40px;
         justify-content: space-between;
     }
     .job-ready-box{
@@ -773,7 +992,7 @@ body{
         text-align: left;
     }
     .job-ready-text-box{
-        margin-top: 90px;
+        margin-top: 35px;
         display: flex;
         flex-direction: column;
         max-width: 406px;
@@ -782,10 +1001,6 @@ body{
     .job-ready-text{
         margin:  0 0 10px ;
     }
-    .job-ready-text p{
-        text-align: left;
-    }
-
 
     .completely-box{
         column-gap: 50px;
@@ -839,6 +1054,13 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+    .header-section-ships ul{
+        column-count: 2;
+    }
+
+    .way {
+        margin-bottom: 20px;
+    }
     .way-section-content-session ul{
         display: flex;
         flex-direction: row;
@@ -863,23 +1085,23 @@ body{
     .way-section-text {
          flex-direction: row;
     }
-    .way-section-text img{
-        width: 180px;
-        height: 180px;
-        bottom: unset;
-        top: 0;
-    }
-    .way-section-img {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-    }
-    .way-section-img img {
-        border-radius: 50%;
+    .way-section {
+        overflow: hidden;
     }
     .way-bg-ng {
         background-position: bottom 0 left 0;
     }
+
+    .hero-action {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-action a {
+        margin: 0 0 20px 0;
+        width: 265px;
+    }
+
 
     .assistance-wrapper {
         flex-direction: column;
@@ -890,6 +1112,10 @@ body{
         padding: 20px 0;
         min-width: 324px;
     }
+    .counter-manual{
+        margin-bottom: 60px;
+    }
+
 
     .ticket-boxes{
         display: flex;
@@ -909,6 +1135,7 @@ body{
     .ticket-section-text{
         margin-bottom: 60px;
     }
+
 
     .job-ready-section{
         display: flex;
@@ -938,6 +1165,15 @@ body{
     .job-ready-text p {
         text-align: center;
     }
+    .job-ready-text ul{
+        margin-top: 20px;
+    }
+    .job-ready-text ul li p {
+        text-align: left;
+        max-width: 300px;
+        width: 100%;
+    }
+
     .job-ready-box {
         margin-right: 0;
     }
@@ -948,6 +1184,11 @@ body{
         max-height: 414px;
         width:  414px;
         margin-bottom: 10px;
+    }
+
+    .completely-ready-text p {
+        text-align: center;
+        padding: 10px 0;
     }
 
     .completely-section {
@@ -992,17 +1233,24 @@ body{
         flex-direction: column;
         justify-content: center;
         column-gap: 0;
-        row-gap: 40px;
         padding: 40px 20px;
     }
 
-    .prim-box-line{
-        width: 668px;
-        max-width: 100%;
+    .assistance-box {
+        width: 100%;
+    }
+    .assistance-box:not(:last-child)::after{
+        content: " ";
+        display: block;
+        width: 100%;
         height: 2px;
         background: #295AC2;
         mix-blend-mode: normal;
         opacity: 0.1;
+        transform: rotate(0deg);
+        position: absolute;
+        top: 103%;
+        right: 0;
     }
 
     .assistance-box p{
@@ -1073,7 +1321,8 @@ body{
         max-width: 100%;
     }
     .skills-box-btn{
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 
     .features-heading{
@@ -1109,6 +1358,23 @@ body{
     .none-768{
         display: none;
     }
+
+    .media-section-section{
+        display: block;
+    }
+    .schedule-section{
+        display: none;
+    }
+    .media-box h4{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .schedule-boxes{
+        column-gap: 25px;
+    }
+    .media-schedule-box{
+        column-gap: 25px;
+    }
 }
 
 @media screen and (max-width: 577px) {
@@ -1120,22 +1386,7 @@ body{
         margin-top: 25px;
         display: flex;
     }
-    .way-section-content-session ul li {
-        padding: 11px 13px 0 0;
-    }
 
-    .way-section-img {
-        position: absolute;
-        right: -10px;
-        z-index: -1;
-    }
-    .way-section-text .hero-action {
-        flex-wrap: wrap;
-        row-gap: 20px;
-    }
-    .way-section-text .hero-action .btn{
-        width: 100%;
-    }
     .skills-section {
         grid-template-columns: auto;
     }
@@ -1148,9 +1399,45 @@ body{
     .faq-section-accordion-text p{
         padding: 10px 10px 20px;
     }
+
+    .media-box{
+        width: 100%;
+    }
+    .box1 .m-b-bordered:last-child{
+        border: black;
+    }
+    .media-schedule-box .media-box:last-child{
+        padding-right: 0;
+    }
+    .media-schedule-box .media-box:first-child{
+        padding-right: 30px;
+    }
+    .box1{
+        border-bottom: 2px solid #EAEFF9;
+        padding-bottom: 30px ;
+    }
+    .schedule-boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 40px;
+    }
 }
 
 @media screen and (max-width: 414px) {
+    .header-section-top .header-section-btn:nth-child(3){
+        flex: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 15px;
+    }
+    .header-section {
+        padding: 10px 20px;
+    }
+    .header-section-ships ul li {
+        width: 140px;
+    }
 
     .who-hire{
         background: #FFFFFF;
@@ -1171,37 +1458,40 @@ body{
     .way-section-content {
         justify-content: center;
     }
-    .way-section-text{
-        display: flex;
-        justify-content: center;
-    }
+
     .way-text-box{
         max-width: 310px;
         padding: 0;
         margin: 0;
         position: relative;
     }
-    .way-section-content-session{
-        width: 270px;
-    }
-    .way-section-content-session ul {
-        display: flex;
-        flex-direction: column;
-    }
-    .way-section-content-session ul li {
-        padding: 11px 40px 25px 0;
-        margin-right: 0;
-    }
+
     .hero-action {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 25px;
-        row-gap: 20px;
     }
-    .hero-action a{
-        width: 100%;
+    .way-section-img{
+        position: relative;
+    }
+    .way-section-img img {
+        height: 340px;
+        left: 74%;
+        top: -156%;
+    }
+    .enginer-gradient{
+        position: absolute;
+        left: 73%;
+        top: 41%;
+        z-index: -1;
+        display: block;
+        width: 120px;
+        height: 120px;
+        background: linear-gradient(180deg, rgba(255, 85, 85, 0.0001) 0%, #FF5555 100%);
+    }
+    .from-sale{
+        text-align: center;
     }
 
     .counter-box-manual {
@@ -1222,3 +1512,7 @@ body{
     }
 }
 /* ****  MEDIA  END **** */
+
+.d-flex {
+    display: flex;
+}

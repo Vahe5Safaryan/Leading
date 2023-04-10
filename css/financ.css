@@ -1,0 +1,305 @@
+/* FINANCING START */
+.financing-heading{
+    margin: auto;
+    padding: 130px 0 30px;
+}
+.financing-section-text{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.financing-section-text p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    max-width: 500px;
+    width: 100%;
+}
+
+.financing-section{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+}
+
+.financing-box{
+    display: grid;
+    grid-template-columns: auto auto;
+    background: #fff;
+}
+.financing-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.financing-box-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 30px 20px;
+    row-gap: 15px;
+}
+
+.financing-box-text h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+.financing-box-text p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 253px;
+    width: 100%;
+}
+/* FINANCING END */
+
+/* DISCUSSION START */
+
+.discussion-section{
+    padding: 65px 100px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #3E4ED7;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+.discussion-section h3{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+.discussion-section p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 20px 0 36px;
+}
+
+.discussion-btn{
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    padding: 15px 0;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+}
+.discussion-btn a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+/* DISCUSSION END */
+
+/* FINANCING ABOUT START */
+.finance-about-section-heading{
+    margin-top: 120px;
+}
+
+.finance-about-section-text {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 60px;
+}
+
+.finance-prim-section-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 60px;
+}
+
+.finance-prim-section-text p {
+    max-width: 600px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+
+.finance-about-section {
+    display: flex;
+    flex-direction: row;
+    padding: 0 150px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.finance-about-box p {
+    max-width: 297px;
+    width: 100%;
+}
+
+.overflow-box-financing{
+    display: none;
+    width: 300px;
+    height: 253px;
+    background: linear-gradient(90deg, rgba(250, 250, 255, 0.0001) 0%, #FAFAFF 100%);
+}
+/* FINANCING ABOUT END */
+
+.requirements-heading{
+    padding: 120px 0 0;
+}
+
+.requirements-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.thank-section{
+    padding: 40px 0;
+}
+
+.thank-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+
+}
+
+.reviews-icon{
+    position: absolute;
+    bottom: -5%;
+    left: 30%;
+}
+.reviews-icon img{
+    display: inline-block;
+    max-width: 20px;
+    height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .financing-box-text{
+        padding: 60px 15px 20px;
+    }
+    .finance-about-section{
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .financing-heading{
+        padding: 110px 0 30px;
+    }
+    .financing-section{
+        grid-template-columns: auto ;
+        row-gap: 30px;
+    }
+    .financing-box img{
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .financing-box-text p{
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .finance-about-section{
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .financing-heading{
+        padding: 120px 0 30px;
+        max-width: 298px;
+        width: 100%;
+    }
+    .discussion-section{
+        padding: 80px 80px;
+        margin-top: 20px;
+    }
+    .discussion-section h3{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    .finance-about-section{
+        padding: 0 30px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .finance-about-box p{
+        width: 297px;
+        max-width: 297px;
+    }
+    .overflow-box-financing{
+        display: block;
+    }
+}
+@media screen and (max-width: 577px) {
+    .financing-box-text{
+        padding: 40px 30px 20px;
+    }
+    .financing-box img {
+        height: 100%;
+    }
+
+    .discussion-section{
+        padding: 45px 45px;
+    }
+
+    .finance-about-section{
+        padding: 0 30px;
+        overflow-x: auto;
+        overflow-y: visible;
+    }
+    .finance-about-box p{
+        width: 297px;
+        max-width: 297px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .financing-heading{
+        padding: 55px 0 30px;
+    }
+    .financing-box{
+        grid-template-columns: auto;
+    }
+
+    .finance-about-section{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: visible;
+    }
+    .financing-box-text p{
+        max-width: 374px;
+        width: 100%;
+    }
+    .overflow-box-financing{
+        display: none;
+    }
+}
+@media screen and (max-width: 320px) {
+     .discussion-section{
+        padding: 45px 20px;
+    }
+}

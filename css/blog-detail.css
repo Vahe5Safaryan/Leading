@@ -2,10 +2,6 @@ body{
     background: #FAFAFF;
 }
 
-
-/*.blog-detail-heading{*/
-/*    margin: 150px 300px  0 300px;*/
-/*}*/
 .blog-detail-heading h2{
     text-align: left;
     padding-top: 150px;
@@ -53,8 +49,6 @@ body{
     line-height: 26px;
     color: #295AC2;
 }
-
-
 
 
 @media screen and (max-width: 1024px) {
