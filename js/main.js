@@ -1,7 +1,7 @@
 "use strict";
 
 // HEADER TIMER START //
-let countDownDate = new Date("April29, 2023 20:20:00").getTime();
+let countDownDate = new Date("May19, 2023 20:20:00").getTime();
 const elements = Array.from(document.getElementsByClassName("timers"));
 
 function timer() {
@@ -40,6 +40,17 @@ $(".slider").slick({
     fullscreen: true,
 });
 //  SLICK SLIDER END //
+
+
+// FAQ SHOW ALL START //
+let skillsBtns = document.getElementsByClassName("expend-button");
+let skillsSection = document.querySelectorAll(".skills-section");
+for (let i = 0; i < skillsBtns.length; i++) {
+    skillsBtns[i].addEventListener('click', function () {
+        skillsSection[i].classList.toggle('expended')
+    })
+}
+// FAQ SHOW ALL END //
 
 
 //  PACIFIC TIME START //
@@ -109,9 +120,7 @@ if (doneBtn) {
         overlay.classList.toggle('d-block');
     });
 }
-
 //  POPUP END //
-
 
 
 //  Menu in scroll START//
@@ -121,10 +130,11 @@ window.addEventListener('scroll', function() {
         if (window.scrollY >= 200) {
             navLinksScroll.style.display = 'flex';
             navLinksScroll.style.position = 'fixed';
-            navLinksScroll.style.top = '0';
+            navLinksScroll.style.top = '5px';
             navLinksScroll.style.left = '50%';
             navLinksScroll.style.transform = 'translate(-50%, -10%)';
             navLinksScroll.style.zIndex = '3';
+            navLinksScroll.style.padding = '10px 15px';
             navLinksScroll.style.background = 'rgba(255, 255, 255, 0.8)';
             navLinksScroll.style.backdropFilter = 'blur(13.5914px)';
         } else {
@@ -140,6 +150,20 @@ window.addEventListener('scroll', function() {
     }
 });
 // Menu in scroll START //
+
+
+//  Login icon position START //
+window.addEventListener('scroll', function() {
+    let loginScroll = document.querySelector('.login_scroll');
+    if (loginScroll) {
+        if (window.scrollY >= 200) {
+            loginScroll.style.top = '28px';
+        } else {
+            loginScroll.style.display = '';
+        }
+    }
+});
+//  Login icon position START //
 
 
 //  Header other menu scrol START //
@@ -206,8 +230,6 @@ blur.addEventListener('click', function () {
     blur.classList.toggle('d-block');
     mediaRightMenu.style.right = "-400px";
 });
-
-
 //  Menu in right END //
 
 
@@ -226,7 +248,7 @@ $('.counter-section').slick({
             breakpoint: 1025,
             settings: {
                 slidesToShow: 4,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: false
             }
@@ -246,6 +268,14 @@ $('.counter-section').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 dots: false
+            }
+        },
+        {
+            breakpoint: 578,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true
             }
         },
         {
@@ -265,15 +295,15 @@ $('.brand-section').slick({
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     nextArrow: false,
     prevArrow: false,
     responsive: [
         {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true,
@@ -282,23 +312,32 @@ $('.brand-section').slick({
         {
             breakpoint: 998,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true,
             }
         },
         {
-            breakpoint: 768,
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+            }
+        },
+        {
+            breakpoint: 578,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true,
+                dots: false,
             }
         },
         {
-            breakpoint: 500,
+            breakpoint: 415,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -322,33 +361,38 @@ $('.reviews-box').slick({
     prevArrow: false,
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 1025,
             settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToShow: 2,
+                variableWidth: true,
+                slidesToScroll: 1,
                 infinite: true,
-                dots: true
+                dots: false,
             }
         },
         {
             breakpoint: 998,
             settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
             }
         },
         {
-            breakpoint: 500,
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 1.8,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+            }
+        },
+        {
+            breakpoint: 577,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
             }
         }
     ]
@@ -370,7 +414,7 @@ $('.teachers-box-section').slick({
             breakpoint: 1024,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToScroll: 1,
                 infinite: true,
 
             }
@@ -385,8 +429,8 @@ $('.teachers-box-section').slick({
         {
             breakpoint: 768,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
         },
         {

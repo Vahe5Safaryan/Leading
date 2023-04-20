@@ -79,6 +79,19 @@ body{
 }
 
 /* Way Start */
+.way-bg-ng-manual{
+    mix-blend-mode: screen;
+    opacity: 0.5;
+    position: absolute;
+    background-image: url(../images/way/Path-ng.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: bottom 0 left 71%;
+    background-size: 719px 609px;
+    background-clip: padding-box;
+}
+
 .way-section {
     position: relative;
     display: grid;
@@ -86,6 +99,7 @@ body{
     flex-direction: row;
     padding: 60px 60px;
 }
+
 
 .way {
     padding-top: 20px;
@@ -114,9 +128,7 @@ body{
     margin-top: 10px;
 }
 
-.way-bg-ng {
-    background-position: bottom -10% left 85%;
-}
+
 .enginer-gradient{
     display: none;
 }
@@ -165,6 +177,11 @@ body{
     margin-left: 80px;
 }
 
+
+.counter-heading{
+    margin: 60px 0 57px;
+}
+
 .counter-box-manual{
     padding: 30px 0;
 }
@@ -186,9 +203,17 @@ body{
 }
 /* leveL End */
 
+
+.brand-section-manual{
+    padding: 160px 0 80px;
+    margin: 0;
+}
+
+
+
 /* Ticket Start */
 .ticket-section-heading{
-    margin-bottom: 35px;
+    margin: 80px 0 35px;
 }
 .ticket-section-text{
     margin-bottom: 80px;
@@ -230,9 +255,10 @@ body{
     display: flex;
     flex-direction: row;
     position: relative;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
     overflow: hidden;
     object-fit: cover;
+    padding-top: 140px;
 }
 
 .job-ready-box{
@@ -303,16 +329,16 @@ body{
 }
 
 .completely-section-heading h2{
-    padding: 70px 0 30px;
+    padding: 70px 0 50px;
 }
 
 .completely-box-img{
-    margin-left: -35px;
+    margin-left: -90px;
 }
 
-.completely-box-img img{
-    width: 652px;
-    height: 435px;
+.completely-box-img img {
+    width: 420px;
+    height: 419px;
     mix-blend-mode: multiply;
 }
 .completely-box-text {
@@ -323,6 +349,7 @@ body{
 .completely-box{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     column-gap: 100px;
 }
 
@@ -337,12 +364,18 @@ body{
 /* Job End */
 
 /* Pacifiq Start */
+
+.pacific-time-line{
+    display: block;
+    padding: 50px 0 35px 0;
+}
+
 .pacific-time{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 5px;
+    /*column-gap: 5px;*/
     padding: 80px 20px 0 0;
     overflow: auto;
 }
@@ -353,7 +386,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    width: 95px;
     padding: 35px 0;
 }
 .pacific-time-box h4{
@@ -426,7 +459,7 @@ body{
 
 /* Teachers Start */
 .teachers-section{
-    padding: 80px 20px;
+    padding: 80px 0 20px;
 }
 
 .teachers-text p{
@@ -451,6 +484,9 @@ body{
     mix-blend-mode: multiply;
     border-radius: 50%;
     margin: auto;
+    max-width: 140px;
+    height: auto;
+    display: inline-block;
 }
 
 .teacher-box-text{
@@ -479,7 +515,7 @@ body{
     line-height: 20px;
     text-align: center;
     color: #999999;
-    padding: 0 45px;
+    padding: 8px 45px;
 }
 /* Teachers End */
 
@@ -495,7 +531,7 @@ body{
     justify-content: center;
     background: #fff;
     border-radius: 10px;
-    padding: 20px 40px;
+    padding: 40px 40px;
     overflow-x: auto;
     overflow-y: hidden;
 }
@@ -558,7 +594,7 @@ body{
     margin-bottom: 70px;
 }
 .course-section{
-    padding: 40px;
+    padding: 40px 0 80px 0;
 }
 .course-section-text{
     display: flex;
@@ -585,6 +621,14 @@ body{
     overflow-x: auto;
     padding: 70px 0;
 }
+.peoples-lives-box img{
+    max-width: 188px;
+    height: auto;
+    display: inline-block;
+}
+
+
+
 .peoples-lives-box h4{
     font-weight: 400;
     font-size: 16px;
@@ -675,7 +719,7 @@ body{
 .key-features-section{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     row-gap: 100px;
@@ -688,6 +732,8 @@ body{
     text-align: center;
     color: #000000;
     margin-top: 20px;
+    max-width: 177px;
+    height: 52px;
 }
 /* Features End */
 
@@ -811,10 +857,6 @@ body{
     align-items: center;
 }
 
-.bootcamp-section-copy{
-    margin: 80px 0;
-}
-
 .skills-section.expended {
     max-height: 1630px !important;
 }
@@ -836,6 +878,7 @@ body{
     overflow-y: hidden;
     padding:  25px 25px;
     background: #fff;
+    border-radius: 10px;
     column-gap: 40px;
 }
 
@@ -848,6 +891,7 @@ body{
 .schedule-box{
     position: relative;
     white-space: nowrap;
+    margin-top: 13px;
 }
 .schedule-box-bordered{
     min-width: 2px;
@@ -880,7 +924,7 @@ body{
 
 /* Schedule Media Start */
 .media-section-section{
-    padding: 40px;
+    padding: 25px 40px;
     background: #fff;
     max-width: 100%;
     width: 100%;
@@ -917,6 +961,15 @@ body{
 }
 /* Schedule Media End */
 
+
+.join-box-li-b{
+    display: block;
+}
+.join-box-li-s{
+    display: none !important;
+}
+
+
 /* **** MEDIA  START **** */
 @media screen and (max-width: 1200px) {
     .way-box{
@@ -935,7 +988,7 @@ body{
 }
 @media screen and (max-width: 1024px) {
     .header-section{
-        transform: translate(-1%, 0);
+        transform: translate(-6%, 0);
     }
     .way-section-content {
         justify-content: flex-start;
@@ -981,10 +1034,15 @@ body{
         overflow: visible;
     }
 
+    .ticket-section-heading{
+        margin: 60px 0 35px;
+    }
+
     .job-ready-section{
-        padding: 40px;
+        padding: 60px 0 100px;
         justify-content: space-between;
     }
+
     .job-ready-box{
         margin-top: 15px;
     }
@@ -992,7 +1050,7 @@ body{
         text-align: left;
     }
     .job-ready-text-box{
-        margin-top: 35px;
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
         max-width: 406px;
@@ -1051,6 +1109,31 @@ body{
     .bootcamp-under-line{
         margin: 60px 0 90px;
     }
+
+    .teachers-section{
+        padding: 80px 0 60px;
+    }
+
+    .join-box-li-b{
+        display: none !important;
+    }
+    .join-box-li-s{
+        display: block !important;
+    }
+
+    .course-section {
+        padding: 40px 0 60px 0;
+    }
+
+    .course-section-heading {
+        margin: 30px 0 20px;
+    }
+
+
+    .brand-section-manual {
+        padding: 60px 0 60px;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1092,6 +1175,10 @@ body{
         background-position: bottom 0 left 0;
     }
 
+    .ticket-section-heading{
+        margin: 60px 0 30px;
+    }
+
     .hero-action {
         margin-top: 40px;
         display: flex;
@@ -1099,7 +1186,7 @@ body{
     }
     .hero-action a {
         margin: 0 0 20px 0;
-        width: 265px;
+        width: 266px;
     }
 
 
@@ -1108,6 +1195,10 @@ body{
         justify-content: center;
     }
 
+
+    .counter-heading{
+        margin: 60px 0 30px;
+    }
     .counter-box-manual {
         padding: 20px 0;
         min-width: 324px;
@@ -1138,33 +1229,33 @@ body{
 
 
     .job-ready-section{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        padding: 60px 20px;
-        overflow: hidden;
+        /*display: flex;*/
+        /*flex-direction: column-reverse;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        padding: 60px 0 75px 0;
+        /*overflow: hidden;*/
     }
     .job-ready-heading h2 {
-        text-align: center;
+        text-align: left;
     }
 
-    .job-ready-text-box {
-        margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-    }
-    .job-ready-text {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .job-ready-text p {
-        text-align: center;
-    }
+    /*.job-ready-text-box {*/
+    /*    margin-top: 30px;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    max-width: 100%;*/
+    /*}*/
+    /*.job-ready-text {*/
+    /*    text-align: center;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*}*/
+    /*.job-ready-text p {*/
+    /*    text-align: center;*/
+    /*}*/
     .job-ready-text ul{
         margin-top: 20px;
     }
@@ -1186,36 +1277,28 @@ body{
         margin-bottom: 10px;
     }
 
-    .completely-ready-text p {
-        text-align: center;
-        padding: 10px 0;
-    }
+
+
+    /*.completely-ready-text p {*/
+    /*    text-align: center;*/
+    /*    padding: 10px 0;*/
+    /*}*/
 
     .completely-section {
         padding: 30px 10px;
     }
-
-    .completely-box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        column-gap: 0;
-        row-gap: 30px;
-    }
     .completely-section-heading h2 {
-        padding: 0;
+        padding: 30px;
     }
-
     .completely-box {
-        column-gap: 20px;
+        column-gap: 40px;
     }
-    .completely-box-img{
-        margin-left: 0;
+    .completely-box-img {
+        margin-left: -75px;
     }
     .completely-box-img img{
-        width: 374px;
-        height: 245px;
+        width: 420px;
+        height: 296px;
         mix-blend-mode: multiply;
     }
 
@@ -1325,15 +1408,35 @@ body{
         justify-content: center;
     }
 
+
+    .teacher-box p {
+        padding: 8px 45px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .teachers-box-section .slick-dots button {
+        width: 12px;
+        height: 12px;
+    }
+    .teachers-box-section .slick-dots{
+        margin-top: 0;
+    }
+     .teachers-box-section .slick-track{
+         height: 355px;
+    }
+
+
+
     .features-heading{
         margin-bottom: 40px;
     }
     .key-features-section{
         display: grid;
-        grid-template-columns: auto auto;
-        column-gap: 30px;
+        grid-template-columns: auto auto auto auto;
+        column-gap: 20px;
         row-gap: 66px;
-        padding: 0 30px;
+        /*padding: 0 30px;*/
     }
 
     .faq-section{
@@ -1375,8 +1478,84 @@ body{
     .media-schedule-box{
         column-gap: 25px;
     }
-}
 
+    .media-schedule-box-big {
+        padding: 0 0 25px 0;
+    }
+    .schedule-box {
+         margin-top: 0;
+     }
+
+    .brand-section-overflow > .overflow-box {
+        display: block;
+        width: 260px;
+        height: 200px;
+        position: absolute;
+        top: 65px;
+        right: -25px;
+    }
+}
+@media screen and (max-width: 630px) {
+
+    .job-ready-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 20px 75px 20px;
+        overflow: hidden;
+    }
+    .job-ready-heading h2 {
+        text-align: center;
+    }
+
+    .job-ready-text-box {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .job-ready-text {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .job-ready-text p {
+        text-align: center;
+    }
+
+
+
+    .completely-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0;
+        row-gap: 30px;
+    }
+
+    .completely-section-heading h2 {
+        padding: 30px;
+    }
+    .completely-box {
+        column-gap: 40px;
+    }
+    .completely-box-img {
+        margin-left: 0;
+    }
+    .completely-box-img img{
+        width: 420px;
+        height: 296px;
+        mix-blend-mode: multiply;
+    }
+    .completely-ready-text p {
+        text-align: center;
+    }
+
+}
 @media screen and (max-width: 577px) {
     .skills-section {
         max-height: 650px;
@@ -1390,15 +1569,31 @@ body{
     .skills-section {
         grid-template-columns: auto;
     }
-    .key-features-section {
-        padding: 0 10px;
+
+    .key-features-section{
+        display: grid;
+        grid-template-columns: auto auto;
     }
+
     .faq-section-accordion {
         padding: 0 10px;
     }
     .faq-section-accordion-text p{
         padding: 10px 10px 20px;
     }
+
+
+    .job-ready-img img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .completely-box-img img {
+        width: 280px;
+        height: 197px;
+        mix-blend-mode: multiply;
+    }
+
 
     .media-box{
         width: 100%;
@@ -1422,9 +1617,29 @@ body{
         justify-content: center;
         row-gap: 40px;
     }
+
+    .pacific-time-line{
+        display: block !important;
+        padding: 20px 0 35px 0;
+    }
+
+    .counter-heading{
+        margin: 60px 0 60px;
+    }
+
+    .join-box-li-b{
+        display: block !important;
+    }
+    .join-box-li-s{
+        display: none !important;
+    }
+
+    .schedule-boxes {
+        padding: 20px 0 0;
+    }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 414px){
     .header-section-top .header-section-btn:nth-child(3){
         flex: auto;
         display: flex;
@@ -1437,6 +1652,11 @@ body{
     }
     .header-section-ships ul li {
         width: 140px;
+    }
+
+    .way-bg-ng-manual{
+        background-position: top -30% right 45px;
+        background-size: 359px 304px;
     }
 
     .who-hire{
@@ -1457,6 +1677,10 @@ body{
     }
     .way-section-content {
         justify-content: center;
+    }
+    .hero-action a {
+        margin: 0 0 20px 0;
+        width: 100%;
     }
 
     .way-text-box{
@@ -1490,6 +1714,7 @@ body{
         height: 120px;
         background: linear-gradient(180deg, rgba(255, 85, 85, 0.0001) 0%, #FF5555 100%);
     }
+
     .from-sale{
         text-align: center;
     }
@@ -1510,7 +1735,36 @@ body{
     .ticket-section-text{
         margin-bottom: 45px;
     }
+
+    .media-section-section {
+        padding: 20px;
+    }
+
+    .course-section-heading {
+        margin: 20px 0 20px;
+    }
+
+    .brand-section-overflow > .overflow-box {
+        display: none;
+    }
 }
+@media screen and (max-width: 320px) {
+    .way-section-img{
+        display: none;
+    }
+    .way-bg-ng-manual{
+        background-position: top -15% right -7px;
+    }
+
+    .join-box-li-b{
+        display: none !important;
+    }
+    .join-box-li-s{
+        display: block ;
+    }
+}
+
+
 /* ****  MEDIA  END **** */
 
 .d-flex {

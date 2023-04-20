@@ -20,13 +20,13 @@ a{
 
 body {
     font-family: 'Golos Text', sans-serif;
-    background: #fafafa;
+    background: #f2f2f2;
 }
 
 /* UTILIT START */
 input, textarea {
     background: #FAFAFF;
-    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     font-weight: 400;
     font-size: 16px;
@@ -61,7 +61,7 @@ input, textarea {
     line-height: 19px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    padding: 18px 40px 13px;
+    padding: 16px 40px 15px 41px;
     width: 200px;
     display: inline-flex;
     justify-content: center;
@@ -100,7 +100,7 @@ input, textarea {
     background: #295AC2;
 }
 .btn-width-small{
-    width: 166px;
+    width: 167px;
 }
 .btn-width-large{
     width: 228px;
@@ -112,7 +112,7 @@ input, textarea {
     width: 300px;
 }
 .btn-pr-large{
-    width: 265px;
+    width: 266px;
 }
 
 .btn-xs{
@@ -172,6 +172,11 @@ input, textarea {
     color: #000000;
 }
 
+.block-320{
+    display: none;
+}
+
+
 /* Margin top*/
 .mt10{margin-top: 10px;}
 .mt20{margin-top: 20px;}
@@ -211,18 +216,25 @@ input, textarea {
 }
 @media screen and (max-width: 1024px) {
     .container-with-padding {
-        padding: 0 10px;
+        padding: 0 40px;
+    }
+    .container-with-p-r-none{
+        padding: 0 0 0 40px;
     }
 }
 @media screen and (max-width: 768px) {
-    .sm-block {
-        display: block;
+    .container-with-padding {
+        padding: 0 30px;
     }
+    /*.sm-block {*/
+    /*    display: block;*/
+    /*}*/
+    /*.sm-none {*/
+    /*    display: none !important;*/
+    /*}*/
+
     .input-primary {
         width: 280px;
-    }
-    .sm-none {
-        display: none !important;
     }
 
     .d-flex {
@@ -234,12 +246,30 @@ input, textarea {
     .justify-center {
         justify-content: center;
     }
-    .section-heading{
-        margin-bottom: 30px;
-    }
+    /*.section-heading{*/
+    /*    margin-bottom: 30px;*/
+    /*}*/
     .section-heading h2{
         font-size: 36px;
         line-height: 43px;
+    }
+}
+@media screen and (max-width: 630px) {
+    .sm-block {
+        display: block;
+    }
+    .sm-none {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 414px) {
+    .container-with-padding {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .container-with-p-none{
+        padding: 0 !important;
     }
 }
 
@@ -263,7 +293,6 @@ input, textarea {
 
 /* HEADER SECTION START */
 .header-box {
-    border: 1px solid #ccc;
     background: #FC6144;
     display: flex;
     justify-content: center;
@@ -335,7 +364,7 @@ input, textarea {
     font-size: 10px;
     line-height: 18px;
     text-align: center;
-    letter-spacing: .56px;
+    letter-spacing: 0.56px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -360,7 +389,7 @@ input, textarea {
 
 /* MENU START */
 .logo {
-    padding: 12px 30px 12px 50px;
+    padding: 16px 30px 12px 50px;
 }
 
 .nav-links {
@@ -384,7 +413,7 @@ input, textarea {
 .menu ul li a {
     color: #000000;
     font-size: 16px;
-    margin: 0 15px;
+    margin-right: 30px;
     font-weight: 500;
     line-height: 19px;
     overflow: hidden;
@@ -403,8 +432,8 @@ input, textarea {
 
 .menu {
     display: flex;
-    border-left: 1px solid #ccc;
-    padding: 15px 5px;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    padding: 15px 0 15px 30px;
     overflow: hidden;
 }
 .menu-mobile {
@@ -418,6 +447,11 @@ input, textarea {
     display: none
 }
 
+.nav-links-scroll .logo a img{
+    max-width: 107px;
+}
+
+
 /* Login Start */
 .login{
     display: flex;
@@ -426,7 +460,7 @@ input, textarea {
     align-items: center;
     position: absolute;
     top: 40px;
-    right: 0;
+    right: 35px;
 }
 .login a{
     display: flex;
@@ -514,6 +548,12 @@ input, textarea {
 .madia-right-under-menu ul li a{
    display: flex;
 }
+.madia-right-under-menu ul li a h6{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
 
 .media-right-menu .media-right-social-link{
     margin-top: 35px;
@@ -550,35 +590,36 @@ input, textarea {
     width: 100%;
 }
 
-.slider-container {
-    padding: 0 50px;
-}
-
 .slider-text-box {
-    padding: 50px 0 50px 102px;
+    padding: 50px 0 50px 120px;
     background-color: transparent;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
+
 .hero-text {
     font-weight: 700;
     font-size: 58px;
     max-width: 100%;
-    width: 845px;
+    width: 559px;
     line-height: 70px;
     color: #000;
 }
-
 .hero-desc {
-    margin-top: 25px;
+    margin-top: 40px;
     width: 520px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
 }
+
+.hero-text-768{
+    display: none;
+}
+
 
 .hero-text span:first-child {
     color: #295AC2;
@@ -596,7 +637,7 @@ input, textarea {
 .slider-img {
     position: absolute;
     z-index: -1;
-    left: 55%;
+    left: 50.5%;
     top: 0;
 }
 
@@ -635,12 +676,12 @@ input, textarea {
     border-radius: 10px;
     position: relative;
     width: 100%;
-    padding: 40px 0;
+    padding: 40px 20px;
 }
 
 .counter-box{
     position: relative;
-    padding: 10px 0;
+    /*padding: 10px 0;*/
 }
 
 .counter-bordered {
@@ -686,6 +727,15 @@ input, textarea {
     background-color: #CCCCCC;
     text-indent: -9999px;
 }
+.reviews-section .slick-dots button {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #CCCCCC;
+    text-indent: -9999px;
+}
 .slick-dots li.slick-active button {
     background-color: #FC6144;
 }
@@ -694,17 +744,18 @@ input, textarea {
 /* ABOUT START */
 .about-section{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
+    overflow-x: auto;
 }
 
 .about-box:not(:last-child){
-    margin-right: 30px;
+    margin-right: 52px;
 }
 
 .about-box img{
-    width: 65px;
-    height: 65px;
+    width: 64px;
+    height: 64px;
     border-radius: 12px;
 }
 
@@ -722,6 +773,8 @@ input, textarea {
     line-height: 26px;
     color: #000000;
     margin-top: 15px;
+    max-width: 363px;
+    width: 100%;
 }
 /* ABOUT END */
 
@@ -745,11 +798,14 @@ input, textarea {
 /* BRAND START */
 .brand-section{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     position: relative;
-    width: 100%;
+    overflow-x: auto;
+    mix-blend-mode: darken;
 }
-
+.brand-box{
+    width: 226px;
+}
 .brand-box img{
     display: inline-block;
     max-width: 100%;
@@ -768,6 +824,7 @@ input, textarea {
     font-size: 20px;
     line-height: 24px;
     color: #000000;
+    padding-top: 11px;
 }
 
 .brand-box i{
@@ -780,6 +837,7 @@ input, textarea {
     font-size: 20px;
     line-height: 24px;
     color: #000000;
+    padding-bottom: 8px;
 }
 
 .brand-box p{
@@ -787,18 +845,43 @@ input, textarea {
     font-size: 14px;
     line-height: 26px;
     color: #000000;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 .brand-box a{
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
     color: #295AC2;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
+
+.brand-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.brand-info p{
+    max-width: 216px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.brand-section-overflow > .overflow-box{
+    display: none;
+}
+
+
 /* BRAND END */
 
 /* WAY START */
+
+.section-heading-way{
+    padding-bottom: 49px;
+}
+
 .way-section{
     position: relative;
     display: grid;
@@ -817,7 +900,7 @@ input, textarea {
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    background-position: bottom 19% left 55%;
+    background-position: bottom 50% left 55%;
     background-size: 824px 698px ;
     background-clip: padding-box;
 }
@@ -925,6 +1008,7 @@ input, textarea {
 }
 .way-section-content{
     max-width: 190px;
+    margin: auto;
 }
 
 .way-section-content-session ul li{
@@ -947,6 +1031,7 @@ input, textarea {
     justify-content: space-between;
     text-align: center;
     background: #fff;
+    border-radius: 10px;
     padding: 70px 100px;
 }
 
@@ -1015,12 +1100,14 @@ input, textarea {
 }
 .join-box-info ul li{
     display: flex;
-
     margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px
 }
 .join-box-info ul li i{
     color: #FF5555;
-    margin-right: 10px;
+    margin: 6px 10px 0 0;
 }
 .join-box-info ul li p{
     font-weight: 400;
@@ -1033,7 +1120,7 @@ input, textarea {
 .join-box-info {
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
+    /*padding-left: 10px;*/
     margin-top: 15px;
 }
 
@@ -1154,6 +1241,10 @@ input, textarea {
 /* LEVEL END */
 
 /* FEATURED START */
+.featured-section{
+    padding: 80px 0;
+}
+
 .featured-text{
     display: flex;
     justify-content: center;
@@ -1169,7 +1260,7 @@ input, textarea {
 .featured-img-resp{
     display: flex;
     flex-direction: row;
-    margin: 0 20px 40px 0;
+    margin: 0 40px 40px 0;
 }
 
 .featured-img-resp :not(:last-child){
@@ -1183,7 +1274,9 @@ input, textarea {
 }
 
 .reviews-separate{
-    padding:0 20px ;
+    padding-right: 10px;
+    /*width: 360px;*/
+    max-width: 360px;
 }
 
 .reviews-us-text h2{
@@ -1198,6 +1291,8 @@ input, textarea {
     position: relative;
     display: flex;
     flex-direction: row;
+    /*max-width: 360px;*/
+    /*width: 360px;*/
 }
 .reviews-separate-img img{
     width: 80px;
@@ -1218,7 +1313,7 @@ input, textarea {
 .reviews-separate-img h6{
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 26px;
     color: #000000;
 }
 
@@ -1258,6 +1353,7 @@ input, textarea {
     display: inline-block;
     max-width: 20px;
     height: auto;
+    border-radius: 0;
 }
 
 /* REVIEWS END */
@@ -1266,7 +1362,7 @@ input, textarea {
 .who-hire{
     background: #FFFFFF;
     border-radius: 10px;
-    padding: 90px 60px ;
+    padding: 90px 133px ;
 }
 
 .who-hire-text h2{
@@ -1283,8 +1379,8 @@ input, textarea {
     align-items: center;
     flex-wrap: wrap;
     gap: 75px;
-    /*padding: 85px;*/
 }
+
 
 .who-hire-link{
     text-align: center;
@@ -1367,6 +1463,7 @@ input, textarea {
 .bootcamp-box-form-text{
     margin-top: 20px;
     width: 300px;
+    text-align: center;
 }
 .bootcamp-box-form-text p{
     font-weight: 400;
@@ -1403,6 +1500,7 @@ input, textarea {
 }
 
 .footer-box-nav{
+    position: relative;
     display: grid;
     grid-template-columns: auto auto auto auto;
     column-gap: 10px;
@@ -1426,6 +1524,7 @@ input, textarea {
 }
 
 .footer-box-info-social{
+    /*position: relative;*/
     display: flex;
     flex-direction: column;
 }
@@ -1442,6 +1541,8 @@ input, textarea {
 
 .footer-box-info-social-follow-img{
     margin-top: 60px;
+    display: flex;
+    align-items: center;
 }
 .footer-box-info-social-follow-img img{
     padding-right: 15px;
@@ -1506,6 +1607,47 @@ input, textarea {
 .footer-line{
     display: none;
 }
+
+.block-768{
+    display: none;
+}
+
+.footer-lines{
+    display: none;
+    position: absolute;
+    bottom: 130px;
+    width: 100%;
+    height: 2px;
+    background: #295AC2;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+}
+
+ .footer-lines-social{
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    height: 2px;
+    background: #295AC2;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+}
+.footer-lines-nav{
+    display: none;
+}
+
+.footer-number-line{
+    padding-top: 58px;
+}
+
+.block-577{
+    display: none;
+}
+.none-577{
+    display: block;
+}
+
 /* FOOTER END */
 
 
@@ -1513,15 +1655,16 @@ input, textarea {
 .overflow{
     position: relative;
 }
-.overflow-box{
+.overflow-box {
     display: none;
-    width: 140px;
-    height: 110px;
+    width: 300px;
+    height: 155px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, #FFFFFF 90%);
     position: absolute;
-    top: 16%;
+    top: 0;
     right: 0;
 }
+
 /* GRADIENT END */
 
 
@@ -1652,7 +1795,7 @@ input, textarea {
     }
 
     .login {
-        right: 95px;
+        right: 124px;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -1743,6 +1886,10 @@ input, textarea {
         margin: 20px 0 0 0 ;
     }
 
+    .who-hire{
+        padding: 90px 37px;
+    }
+
     .d-block{
         display: none;
     }
@@ -1756,6 +1903,25 @@ input, textarea {
 
     .gradient-box{
         display: block;
+    }
+
+
+    .about-box:first-child h4{
+        width: 190px;
+        max-width: 100%;
+        margin: auto;
+        padding-top: 20px;
+    }
+    .about-box p{
+        width: 294px;
+        max-width: 100%;
+    }
+
+
+    .reviews-separate {
+        padding-right: 25px;
+        margin-right: 45px;
+        max-width: 360px;
     }
 
 }
@@ -1790,6 +1956,12 @@ input, textarea {
     .footer-section {
         padding: 60px 20px;
     }
+
+    .reviews-separate{
+        padding-right: 76px;
+        /*width: 360px;*/
+        max-width: 360px;
+    }
 }
 @media screen and (max-width: 860px) {
     .header-top {
@@ -1806,21 +1978,114 @@ input, textarea {
         display: none;
     }
 
+    .about-section{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        overflow-x: auto;
+    }
+
+
+    .who-hire-text h2{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+
+    .bootcamp-section{
+        padding: 60px 40px;
+    }
+    .bootcamp-box-text h2{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+    }
+    .bootcamp-box-img{
+        display: none;
+    }
+    .bootcamp-box-img-under{
+        display: block;
+    }
+    .bootcamp-box-img-under img{
+        max-width: 420px;
+        width: 100%;
+    }
+
+    .bootcamp-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .bootcamp-box-centered{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .bootcamp-form {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        position: relative;
+    }
+    .bootcamp-box-form-text {
+        margin: 20px 0 0;
+    }
+    .bootcamp-btn {
+        margin-top: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .input-primary {
+        max-width: 280px;
+        width: 100%;
+    }
+    .bootcamp-box-text {
+        text-align: center;
+    }
+    .bootcamp-box-text p {
+        margin: 30px 0 50px;
+    }
+
+    .bootcamp-form-popup{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 @media screen and (max-width: 768px) {
-    .login{
-     display: none;
-    }
-    .menu {
-        width: auto;
-        padding-left: 15px;
-    }
+    /*.login{*/
+    /* display: none;*/
+    /*}*/
+    /*.menu {*/
+    /*    width: auto;*/
+    /*    padding-left: 15px;*/
+    /*}*/
     .nav-links {
         justify-content: center;
     }
-    .right-menu {
+
+    /*.right-menu {*/
+    /*    display: none;*/
+    /*}*/
+
+    .hero-text {
+        font-size: 36px;
+        line-height: 43px;
+        text-align: left;
+        max-width: 100%;
+        width: 344px;
         display: none;
     }
+    .hero-desc {
+         width: 344px;
+
+    }
+    .hero-text-768{
+        display: block;
+    }
+
 
     .texture {
         background-image: none;
@@ -1851,6 +2116,11 @@ input, textarea {
         align-items: center;
         margin-top: 0;
     }
+    .join-box-timer h6 {
+        max-width: 211px;
+        margin: auto;
+        text-align: center;
+    }
     .d-block{
         display: block;
     }
@@ -1862,6 +2132,7 @@ input, textarea {
         font-size: 36px;
         line-height: 43px;
     }
+
 
     .for-qas-info{
         width: 100%;
@@ -1879,71 +2150,84 @@ input, textarea {
         margin: 0;
     }
 
-    .who-hire-text h2{
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 43px;
-    }
-    .bootcamp-section{
-        padding: 60px 40px;
-    }
-    .bootcamp-box-text h2{
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 43px;
-    }
 
-    .bootcamp-box-img{
-        display: none;
-    }
-    .bootcamp-box-img-under{
+    .brand-section-overflow > .overflow-box{
         display: block;
-    }
-    .bootcamp-box-img-under img{
-        max-width: 420px;
-        width: 100%;
+        width: 260px;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        right: -25px;
     }
 
-    .bootcamp-section{
-        display: flex;
-        flex-direction: column;
-    }
-    .bootcamp-box-centered{
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .bootcamp-form {
-        display: grid;
-        grid-template-columns: auto auto;
-        column-gap: 20px;
-        row-gap: 20px;
-        position: relative;
-    }
-    .bootcamp-box-form-text {
-         margin: 20px 0 0;
-     }
-    .bootcamp-btn {
-         margin-top: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .input-primary {
-        max-width: 280px;
-        width: 100%;
-    }
-    .bootcamp-box-text {
-        text-align: center;
-    }
-    .bootcamp-box-text p {
-         margin: 30px 0 50px;
-     }
+    /*.who-hire-text h2{*/
+    /*    font-weight: 700;*/
+    /*    font-size: 36px;*/
+    /*    line-height: 43px;*/
+    /*}*/
 
-    .bootcamp-form-popup{
-        display: flex;
-        flex-direction: column;
-    }
+
+    /*.bootcamp-section{*/
+    /*    padding: 60px 40px;*/
+    /*}*/
+    /*.bootcamp-box-text h2{*/
+    /*    font-weight: 700;*/
+    /*    font-size: 36px;*/
+    /*    line-height: 43px;*/
+    /*}*/
+    /*.bootcamp-box-img{*/
+    /*    display: none;*/
+    /*}*/
+    /*.bootcamp-box-img-under{*/
+    /*    display: block;*/
+    /*}*/
+    /*.bootcamp-box-img-under img{*/
+    /*    max-width: 420px;*/
+    /*    width: 100%;*/
+    /*}*/
+
+    /*.bootcamp-section{*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*.bootcamp-box-centered{*/
+    /*    width: 100%;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*}*/
+    /*.bootcamp-form {*/
+    /*    display: grid;*/
+    /*    grid-template-columns: auto auto;*/
+    /*    column-gap: 20px;*/
+    /*    row-gap: 20px;*/
+    /*    position: relative;*/
+    /*}*/
+    /*.bootcamp-box-form-text {*/
+    /*     margin: 20px 0 0;*/
+    /* }*/
+    /*.bootcamp-btn {*/
+    /*     margin-top: 0;*/
+    /*    padding: 0;*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*.input-primary {*/
+    /*    max-width: 280px;*/
+    /*    width: 100%;*/
+    /*}*/
+    /*.bootcamp-box-text {*/
+    /*    text-align: center;*/
+    /*}*/
+    /*.bootcamp-box-text p {*/
+    /*     margin: 30px 0 50px;*/
+    /* }*/
+
+    /*.bootcamp-form-popup{*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*}*/
+
+
     .popup-section {
         display: none;
         justify-content: center;
@@ -1958,6 +2242,9 @@ input, textarea {
         right: 0;
     }
 
+    .section-heading-way{
+        padding-bottom: 32px;
+    }
     .way-section-text{
         flex-direction: row-reverse;
     }
@@ -1983,8 +2270,9 @@ input, textarea {
         justify-content: flex-start;
         column-gap: 60px;
         align-items: center;
-        margin-top: 30px;
+        padding-top: 30px;
         max-width: 100%;
+        margin: 0;
     }
     .way-section-content-session ul{
         display: flex;
@@ -2015,13 +2303,17 @@ input, textarea {
         left: 15%;
     }
 
+    .who-hire{
+        padding: 90px 68px;
+    }
+
     .for-qas-sesion{
         display: block;
         margin-top: 0;
     }
 
     .reviews-section{
-        padding: 60px 20px;
+        padding: 60px 0;
     }
 
     .for-qas-bg{
@@ -2033,7 +2325,7 @@ input, textarea {
         row-gap: 40px;
     }
     .footer-section {
-        padding: 40px 20px;
+        padding: 40px 0;
     }
 
     .footer-box-nav-courses ul {
@@ -2051,7 +2343,51 @@ input, textarea {
     .ticket-boxes {
         padding-bottom: 60px;
     }
+
+    .footer-lines{
+        display: block;
+        position: absolute;
+        bottom: 155px;
+        width: 100%;
+        height: 2px;
+        background: #295AC2;
+        mix-blend-mode: normal;
+        opacity: 0.1;
+    }
+    .footer-lines-social{
+        display: block;
+        position: absolute;
+        bottom: 60px;
+        width: 100%;
+        height: 2px;
+        background: #295AC2;
+        mix-blend-mode: normal;
+        opacity: 0.1;
+    }
+
+    .featured-section{
+        padding: 60px 0;
+    }
 }
+@media screen and (max-width: 630px) {
+
+    .login{
+        display: none;
+    }
+    .right-menu {
+        display: none;
+    }
+    .menu {
+        width: auto;
+        padding-left: 15px;
+    }
+
+    .level-box{
+        padding: 34px 40px 37px;
+    }
+
+}
+
 @media screen and (max-width: 577px) {
     .slider-container{
         padding: 20px 0;
@@ -2064,13 +2400,13 @@ input, textarea {
         justify-content: center;
         align-items: center;
     }
-    .hero-text {
-        font-size: 40px;
-        line-height: 43px;
-        text-align: center;
-        max-width: 100%;
-        width: 400px;
-    }
+    /*.hero-text {*/
+    /*    font-size: 40px;*/
+    /*    line-height: 43px;*/
+    /*    text-align: center;*/
+    /*    max-width: 100%;*/
+    /*    width: 400px;*/
+    /*}*/
 
     .slider-img {
         position: static;
@@ -2084,6 +2420,15 @@ input, textarea {
         object-fit: contain;
     }
 
+
+    .counter-section-overflow{
+        display: none;
+    }
+    .counter-bordered {
+        display: none;
+    }
+
+
     .hero-desc {
         width: 450px;
         max-width: 100%;
@@ -2096,6 +2441,9 @@ input, textarea {
     .hero-action {
         margin-top: 25px;
         display: block;
+    }
+    .hero-text {
+        text-align: center;
     }
 
     .bootcamp-box-centered{
@@ -2128,7 +2476,18 @@ input, textarea {
     .about-section{
         display: flex;
         flex-direction: column;
-        margin: 0 20px;
+        justify-content: center;
+        align-items: center;
+        /*margin: 0 20px;*/
+        text-align: center;
+    }
+    .about-box p{
+        max-width: 374px;
+        width: 100%;
+    }
+    .about-box:first-child h4{
+        max-width: 374px;
+        width: 100%;
     }
     .about-box:not(:last-child){
         margin-bottom: 50px;
@@ -2151,11 +2510,6 @@ input, textarea {
         line-height: 26px;
     }
 
-    .brand-section{
-        background: #FFFFFF;
-        border-radius: 10px;
-        padding: 40px 40px 20px 40px;
-    }
     .line-none{
         display: none;
     }
@@ -2179,7 +2533,27 @@ input, textarea {
     }
 
     .join-box-info-right-button a{
-        width: 294px;
+        max-width: 294px;
+    }
+
+
+    .reviews-separate{
+        padding-right: 0px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .reviews-separate-img{
+        justify-content: center;
+        align-items: center;
+    }
+    .reviews-separate-name{
+        width: 150px;
+        text-align: left;
+    }
+    .reviews-social {
+        position: absolute;
+        bottom: -5%;
+        left: 39%;
     }
 
     .footer-section {
@@ -2188,6 +2562,31 @@ input, textarea {
     .footer-box-nav{
         grid-template-columns: auto;
     }
+
+    .footer-lines{
+        display: block;
+    }
+    .footer-lines-social{
+        display: block;
+    }
+
+    .footer-lines-nav{
+        display: block;
+        position: absolute;
+        top: 139px;
+        width: 100%;
+        height: 2px;
+        background: #295AC2;
+        mix-blend-mode: normal;
+        opacity: 0.1;
+    }
+    .block-577{
+        display: block;
+    }
+    .none-577{
+        display: none;
+    }
+
 }
 @media screen and (max-width: 414px) {
     .menu {
@@ -2195,11 +2594,16 @@ input, textarea {
     }
 
     .media-right-menu-btn .btn-width-ex-large{
-        width: 200px;
+        max-width: 294px;
+        width: 100%;
     }
 
     .overflow-box{
         display: none;
+    }
+
+    .top-header-text{
+        width: 150px;
     }
 
     .slider-container{
@@ -2257,9 +2661,8 @@ input, textarea {
     .who-hire{
         background: #FFFFFF;
         border-radius: 10px;
-        padding: 50px;
+        padding: 40px;
     }
-
     .who-hire-logos{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -2267,6 +2670,12 @@ input, textarea {
         align-items: center;
         flex-wrap: wrap;
         gap: 30px;
+    }
+
+    .section-heading-way{
+        padding-bottom: 60px;
+        width: 200px;
+        margin: auto;
     }
     .way-section {
         padding: 20px 20px;
@@ -2327,34 +2736,43 @@ input, textarea {
     }
     .bootcamp-box-form-text {
         text-align: center;
-         width: auto;
+         /*width: auto;*/
+        width: 100%;
     }
-
+    .bootcamp-form input{
+        max-width: 100%;
+    }
+    .featured-img-resp {
+        margin: 0 0 40px 0;
+    }
     .bootcamp-box-form h4{
         margin: 21px 0 26px;
     }
     .bootcamp-btn a{
-        width: 260px;
-    }
-
-    .input-primary {
-        width: 260px;
+        max-width: 280px;
     }
     .bootcamp-box-text{
         width: 280px;
-    }
-    .bootcamp-box-form-text{
-        width: 265px;
+        margin: auto;
     }
     .bootcamp-box-form h4{
         width: 120px;
     }
     .level-box{
-        padding: 30px 40px;
+        padding: 42px  40px 39px;
     }
 
     .way-section-content-session{
         width: 270px;
+    }
+
+    .brand-section{
+        background: #FFFFFF;
+        border-radius: 10px;
+        padding: 40px 40px 20px 40px;
+    }
+    .brand-section-overflow > .overflow-box{
+        display: none;
     }
 
     .footer-form{
@@ -2367,8 +2785,22 @@ input, textarea {
     .counter-bordered {
         display: none;
     }
+
+
+    .reviews-social {
+        position: absolute;
+        bottom: -5%;
+        left: 36%;
+    }
 }
 @media screen and (max-width: 320px) {
+    .top-header-text{
+       display: none;
+    }
+    .block-320{
+        display: block;
+    }
+
     .slider-container{
         padding: 40px 0;
     }
@@ -2423,10 +2855,29 @@ input, textarea {
 
     .other-timer > div{
         width: 56px;
-        font-size: 26px;
+        height: 68px;
+        font-size: 28px;
+        padding: 8px 11px 10px;
     }
     .other-timer > div p {
-        font-size: 9px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 21px;
+    }
+
+    .about-box:first-child h4{
+        max-width: 190px;
+        width: 100%;
+    }
+
+    .level-box {
+        padding: 40px 20px;
+    }
+
+    .reviews-social {
+        position: absolute;
+        bottom: -5%;
+        left: 31%;
     }
 }
 /* ****  MEDIA  END **** */

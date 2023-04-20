@@ -58,14 +58,32 @@ body{
 
 .about-section-qa{
     overflow-x: auto;
+    justify-content: space-between;
 }
 .about-section-qa .about-box{
     min-width: 297px;
     padding-bottom: 20px;
 }
+.about-box p {
+    margin-top: 15px;
+    max-width: 297px;
+    width: 100%;
+}
+.about-box:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.qa-assistance-box h4{
+    color: #295AC2;
+}
+
+.faq-section-qa h4:hover{
+    color: #295AC2;
+}
 
 .real-world-heading{
-    margin-bottom: 35px;
+    margin: 80px 0 35px;
 }
 .ticket-section-text{
     margin-bottom: 80px;
@@ -126,6 +144,14 @@ body{
 }
 
 
+.bootcamp-under-line {
+    margin: 80px 0 0 0;
+}
+.brand-section-manual {
+    padding: 80px 0 80px;
+    margin: 0;
+}
+
 /* **** MEDIA  START **** */
 @media screen and (max-width: 768px) {
     .qa-way-section {
@@ -146,6 +172,10 @@ body{
 
     .qa-skills h4{
         margin: 60px 26px;
+    }
+
+    .real-world-heading{
+        margin: 60px 0 30px;
     }
 }
 
@@ -185,6 +215,10 @@ body{
     .way-text-box h2 {
         max-width: 200px;
         width: 100%;
+    }
+}@media screen and (max-width: 320px) {
+    .qa-way-section-img {
+        display: none;
     }
 }
 /* ****  MEDIA  END **** */
