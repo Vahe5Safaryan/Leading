@@ -1228,34 +1228,13 @@ body{
     }
 
 
-    .job-ready-section{
-        /*display: flex;*/
-        /*flex-direction: column-reverse;*/
-        /*justify-content: center;*/
-        /*align-items: center;*/
+    .job-ready-section{/
         padding: 60px 0 75px 0;
-        /*overflow: hidden;*/
     }
     .job-ready-heading h2 {
         text-align: left;
     }
 
-    /*.job-ready-text-box {*/
-    /*    margin-top: 30px;*/
-    /*    display: flex;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-    /*    max-width: 100%;*/
-    /*}*/
-    /*.job-ready-text {*/
-    /*    text-align: center;*/
-    /*    display: flex;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-    /*}*/
-    /*.job-ready-text p {*/
-    /*    text-align: center;*/
-    /*}*/
     .job-ready-text ul{
         margin-top: 20px;
     }
@@ -1276,13 +1255,6 @@ body{
         width:  414px;
         margin-bottom: 10px;
     }
-
-
-
-    /*.completely-ready-text p {*/
-    /*    text-align: center;*/
-    /*    padding: 10px 0;*/
-    /*}*/
 
     .completely-section {
         padding: 30px 10px;
