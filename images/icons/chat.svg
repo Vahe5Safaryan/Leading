@@ -1,20 +1,40 @@
-<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_b_0_1954)">
-<circle cx="27" cy="27" r="25" fill="#295AC2" fill-opacity="0.8"/>
-<circle cx="27" cy="27" r="26" stroke="white" stroke-width="2"/>
-</g>
-<mask id="mask0_0_1954" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="14" y="17" width="26" height="23">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M14 17H40V39.1756H14V17Z" fill="white"/>
-</mask>
-<g mask="url(#mask0_0_1954)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M35 17H19C16.239 17 14 19.239 14 22V30C14 32.761 16.239 35 19 35H30L33.586 38.586C33.993 38.993 34.494 39.176 34.986 39.176C36.014 39.176 37 38.377 37 37.172V34.578C38.764 33.806 40 32.049 40 30V22C40 19.239 37.761 17 35 17ZM35 19C36.654 19 38 20.346 38 22V30C38 31.189 37.293 32.267 36.198 32.746L35 33.27V34.578V37.172L31.414 33.586L30.828 33H30H19C17.346 33 16 31.654 16 30V22C16 20.346 17.346 19 19 19H35Z" fill="white"/>
-</g>
-<defs>
-<filter id="filter0_b_0_1954" x="-13.5914" y="-13.5914" width="81.1828" height="81.1828" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feGaussianBlur in="BackgroundImageFix" stdDeviation="6.7957"/>
-<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_1954"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_0_1954" result="shape"/>
-</filter>
-</defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 54 54">
+  <defs>
+    <style>
+      .cls-1 {
+        mask: url(#mask);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #295ac2;
+      }
+
+      .cls-5 {
+        opacity: .8;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+    <mask id="mask" x="14" y="17" width="26" height="22.18" maskUnits="userSpaceOnUse">
+      <g id="mask0_0_7937" data-name="mask0 0 7937">
+        <path class="cls-3" d="m14,17h26v22.18H14v-22.18Z"/>
+      </g>
+    </mask>
+  </defs>
+  <g>
+    <g class="cls-5">
+      <circle class="cls-4" cx="27" cy="27" r="25"/>
+    </g>
+    <path class="cls-2" d="m27,54C12.11,54,0,41.89,0,27S12.11,0,27,0s27,12.11,27,27-12.11,27-27,27Zm0-52C13.21,2,2,13.21,2,27s11.21,25,25,25,25-11.21,25-25S40.79,2,27,2Z"/>
+  </g>
+  <g class="cls-1">
+    <path class="cls-3" d="m35,17h-16c-2.76,0-5,2.24-5,5v8c0,2.76,2.24,5,5,5h11l3.59,3.59c.41.41.91.59,1.4.59,1.03,0,2.01-.8,2.01-2v-2.59c1.76-.77,3-2.53,3-4.58v-8c0-2.76-2.24-5-5-5Zm0,2c1.65,0,3,1.35,3,3v8c0,1.19-.71,2.27-1.8,2.75l-1.2.52v3.9l-3.59-3.59-.59-.59h-11.83c-1.65,0-3-1.35-3-3v-8c0-1.65,1.35-3,3-3h16Z"/>
+  </g>
 </svg>

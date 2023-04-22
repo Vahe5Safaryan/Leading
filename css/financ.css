@@ -130,7 +130,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0 60px;
+    padding: 50px 0 15px;
 }
 
 .finance-prim-section-text p {
@@ -282,6 +282,10 @@
         width: 297px;
         max-width: 297px;
     }
+
+    .finance-prim-section-text {
+        padding: 20px 0 15px;
+    }
 }
 @media screen and (max-width: 414px) {
     .financing-heading{
@@ -306,6 +310,7 @@
     .overflow-box-financing{
         display: none;
     }
+
 }
 @media screen and (max-width: 320px) {
      .discussion-section{
