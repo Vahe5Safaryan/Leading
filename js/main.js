@@ -121,39 +121,6 @@ if (doneBtn) {
     });
 }
 //  POPUP END //
-
-
-//  Menu in scroll START//
-// window.addEventListener('scroll', function() {
-//     let navLinksScroll = document.querySelector('.nav-links-scroll');
-//     if (navLinksScroll) {
-//         if (window.scrollY >= 200) {
-//             navLinksScroll.style.display = 'flex';
-//             navLinksScroll.style.position = 'fixed';
-//             navLinksScroll.style.top = '5px';
-//             navLinksScroll.style.left = '50%';
-//             navLinksScroll.style.transform = 'translate(-50%, -10%)';
-//             navLinksScroll.style.zIndex = '3';
-//             navLinksScroll.style.padding = '20px 10px';
-//             navLinksScroll.style.background = 'rgba(255, 255, 255, 0.8)';
-//             navLinksScroll.style.backdropFilter = 'blur(13.5914px)';
-//             navLinksScroll.style.webkitBackdropFilter = 'blur(13.5914px)';
-//             navLinksScroll.style.width = '100%';
-//         } else {
-//             navLinksScroll.style.display = '';
-//             navLinksScroll.style.position = '';
-//             navLinksScroll.style.top = '';
-//             navLinksScroll.style.left = '';
-//             navLinksScroll.style.transform = '';
-//             navLinksScroll.style.zIndex = '';
-//             navLinksScroll.style.background = '';
-//             navLinksScroll.style.backdropFilter = '';
-//             navLinksScroll.style.webkitBackdropFilter = '';
-//             navLinksScroll.style.width = '';
-//         }
-//     }
-// });
-
 const navLinksScroll = document.querySelector('.nav-links-scroll');
 function handleNavScroll() {
     if (navLinksScroll) {
