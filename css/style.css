@@ -1804,7 +1804,7 @@ input, textarea {
 .iti__country-list{
     position: absolute !important;
     max-width: 320px;
-    left: -8px;
+    left: 0;
     top: 55px;
 }
 /* BOOTCAMP END */

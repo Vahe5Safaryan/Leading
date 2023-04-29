@@ -509,8 +509,21 @@ for (let i = 0; i < inputs.length; i++) {
     });
 }
 
+//  Way Link
 $('.way-section').click((e) => {
     const href = e.currentTarget.dataset.href
     if (href)
         window.location.href = href
 })
+
+
+//  Scrol Width
+const scheduleSection = document.querySelector('.schedule-section');
+const overflowBox = document.querySelector('.overflow-box');
+scheduleSection.addEventListener('scroll', function() {
+    if (this.scrollLeft + this.clientWidth >= 980) {
+        overflowBox.style.display = 'none';
+    } else {
+        overflowBox.style.display = 'block';
+    }
+});
