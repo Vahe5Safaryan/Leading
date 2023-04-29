@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c04ccb0-d310-4bf5-86d6-ac5679c7fdcf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="6c04ccb0-d310-4bf5-86d6-ac5679c7fdcf" name="Changes" comment="bugFix and adding gitignore file">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/financ.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/financ.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/manual.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/manual.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/qa.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/qa.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/slick.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/slick.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/testmonial.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/testmonial.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qa.html" beforeDir="false" afterPath="$PROJECT_DIR$/qa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testmonial.html" beforeDir="false" afterPath="$PROJECT_DIR$/testmonial.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="gh-pages" />
       </map>
     </option>
   </component>
@@ -94,8 +85,27 @@
       <workItem from="1681378142117" duration="605000" />
       <workItem from="1681721556532" duration="100782000" />
       <workItem from="1682062394886" duration="24957000" />
-      <workItem from="1682117859596" duration="14760000" />
+      <workItem from="1682117859596" duration="17205000" />
+      <workItem from="1682240783618" duration="2000" />
+      <workItem from="1682515801376" duration="32912000" />
+      <workItem from="1682633460859" duration="8120000" />
+      <workItem from="1682761994540" duration="19957000" />
     </task>
+    <task id="LOCAL-00001" summary="bugfix">
+      <created>1682784138747</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682784138747</updated>
+    </task>
+    <task id="LOCAL-00002" summary="bugFix and adding gitignore file">
+      <created>1682794076985</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682794076985</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,10 +116,27 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/gh-pages" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bugfix" />
+    <MESSAGE value="bugFix and adding gitignore file" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugFix and adding gitignore file" />
   </component>
 </project>
