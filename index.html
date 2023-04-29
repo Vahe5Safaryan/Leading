@@ -17,8 +17,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
           rel="stylesheet">
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css"/>
+
+    <script src="./js/jquery-3.6.4.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
 </head>
 <body>
 
@@ -244,7 +247,6 @@
 </section>
 <!--Counter END-->
 
-
 <!-- About START-->
 <section>
     <div class="container container-with-padding about-container mt80">
@@ -343,7 +345,7 @@
             <h2>Choose your way</h2>
         </div>
         <div class="way">
-            <div class="way-section">
+            <div class="way-section" data-href="index.html">
                 <div class="way-bg-ng"></div>
                 <div class="way-section-text">
                     <div class="way-section-img">
@@ -369,7 +371,7 @@
                 </div>
             </div>
 
-            <div class="way-section  way-section-software mt30">
+            <div class="way-section way-section-software mt30" data-href="index.html">
                 <div class="way-bg-soft"></div>
                 <div class="way-section-text">
                     <div class="way-section-img way-software">
@@ -395,7 +397,7 @@
                 </div>
             </div>
 
-            <div class="way-section  way-section-developer mt30">
+            <div class="way-section  way-section-developer mt30" data-href="index.html">
                 <div class="way-bg-dev"></div>
                 <div class="way-section-text">
                     <div class="way-section-img way-developer">
@@ -691,7 +693,7 @@
                         <div class="bootcamp-form">
                             <input class="input-primary" type="text" name="text" placeholder="Your name">
                             <input class="input-primary" type="email" name="email" placeholder="Email">
-                            <div>
+                            <div class="tell-input">
                                 <input class="input-primary form-control phone bootcamp-form-section"
                                        type="tel" name="tel">
                             </div>
@@ -714,6 +716,7 @@
     </div>
 </section>
 <!--Bootcamp START-->
+
 
 <!--Footer START-->
 <footer>
@@ -756,13 +759,11 @@
                         <a href="tel:+1 (323) 500-012"><h4 class="primary_h">+1 (323) 500-0120</h4></a>
                         <span>9 AM – 5 PM, PST</span>
 
-
                         <div class="footer-lines"></div>
 
                         <div class="footer-box-info-number footer-number-line block-577">
                             <a href="mailto:hello@testpro.io"><h4 class="primary_h">hello@testpro.ioio</h4></a>
                         </div>
-
                         <div class="footer-lines-social"></div>
                         <div class="footer-box-info-social-follow-img">
                             <img src="images/follow/facebook.svg" alt="">
@@ -810,7 +811,7 @@
                         <div class="bootcamp-form bootcamp-form-popup">
                             <input class="input-primary" type="text" name="text" placeholder="Your name">
                             <input class="input-primary" type="email" name="email" placeholder="Email">
-                            <div>
+                            <div class="">
                                 <input class="input-primary form-control phone bootcamp-form-section"
                                        type="tel" name="tel">
                             </div>
@@ -846,11 +847,6 @@
 <!-- Boat END -->
 
 
-<!-- Jquery -->
-<script src="./js/jquery-3.6.4.min.js"></script>
-<!-- Tell -->
-<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.2/build/js/intlTelInput.js"></script>
-<!-- Slick -->
 <script src="./js/slick.min.js"></script>
 <!-- Main JS -->
 <script src="./js/main.js"></script>

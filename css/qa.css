@@ -158,6 +158,14 @@ body{
 }
 
 /* **** MEDIA  START **** */
+@media screen and (max-width: 868px) {
+    .qa-way-section-img img {
+        height: 600px;
+        top: -26%;
+        left: -45%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .qa-way-section {
         padding: 20px;

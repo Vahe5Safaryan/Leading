@@ -13,6 +13,7 @@
           integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
@@ -20,6 +21,11 @@
 
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css"/>
+    <!-- Jquery -->
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <!-- Tell -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.2/build/js/intlTelInput.js"></script>
+
 </head>
 <body>
 <!-- Header section START-->
@@ -198,37 +204,40 @@
 
 <!-- Schedule START -->
 <div class="container container-with-padding">
-    <div class="schedule-section">
-        <div class="schedule-box  item1">
-            <p>Level</p>
-            <h4>Begginer</h4>
-        </div>
-        <div class="schedule-box-bordered"></div>
-        <div class="schedule-box2 item2">
-            <div class="schedule-box ">
-                <p>Format</p>
-                <h4>Online</h4>
-                <span>Part-time</span>
+    <div class="overflow">
+
+        <div class="schedule-section">
+            <div class="schedule-box  item1">
+                <p>Level</p>
+                <h4>Begginer</h4>
             </div>
             <div class="schedule-box-bordered"></div>
-            <div class="schedule-box ">
-                <p>Weekly</p>
-                <h4>3 times</h4>
-                <span>10–12 hours</span>
-            </div>
-        </div>
-        <div class="schedule-box-bordered"></div>
-        <div class="schedule-box3 item3">
-            <div class="schedule-box">
-                <p>Duration</p>
-                <h4>9 weeks </h4>
-                <span>+ internship</span>
+            <div class="schedule-box2 item2">
+                <div class="schedule-box ">
+                    <p>Format</p>
+                    <h4>Online</h4>
+                    <span>Part-time</span>
+                </div>
+                <div class="schedule-box-bordered"></div>
+                <div class="schedule-box ">
+                    <p>Weekly</p>
+                    <h4>3 times</h4>
+                    <span>10–12 hours</span>
+                </div>
             </div>
             <div class="schedule-box-bordered"></div>
-            <div class="schedule-box">
-                <p>Duration</p>
-                <h4>9 weeks </h4>
-                <span>+ internship</span>
+            <div class="schedule-box3 item3">
+                <div class="schedule-box">
+                    <p>Duration</p>
+                    <h4>9 weeks </h4>
+                    <span>+ internship</span>
+                </div>
+                <div class="schedule-box-bordered"></div>
+                <div class="schedule-box">
+                    <p>Duration</p>
+                    <h4>9 weeks </h4>
+                    <span>+ internship</span>
+                </div>
             </div>
         </div>
         <div class="overflow-box"></div>
@@ -441,7 +450,7 @@
 
 <!-- Completely START -->
 <section class="next-section">
-    <div class="container container-with-padding">
+    <div class="container container-with-padding container-with-padding-l-none">
         <div class="completely-section" id="schedule">
             <div class="section-heading completely-section-heading">
                 <h2>Completely online</h2>
@@ -886,7 +895,7 @@
                 </div>
             </div>
             <div class="skills-box-btn">
-                <button class="expend-button">+ Show all</button>
+                <button class="expend-button"> <i class="fa fa-plus" ></i> Show all </button>
             </div>
         </div>
     </div>
@@ -1543,10 +1552,7 @@
 <!-- Boat END -->
 
 
-<!-- Jquery -->
-<script src="./js/jquery-3.6.4.min.js"></script>
-<!-- Tell -->
-<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.2/build/js/intlTelInput.js"></script>
+
 <!-- Slick -->
 <script src="./js/slick.min.js"></script>
 <!-- Main JS -->

@@ -43,11 +43,32 @@ $(".slider").slick({
 
 
 // FAQ SHOW ALL START //
+// let skillsBtns = document.getElementsByClassName("expend-button");
+// let skillsSection = document.querySelectorAll(".skills-section");
+// for (let i = 0; i < skillsBtns.length; i++) {
+//     skillsBtns[i].addEventListener('click', function () {
+//         skillsSection[i].classList.toggle('expended')
+//     })
+// }
+
+
 let skillsBtns = document.getElementsByClassName("expend-button");
 let skillsSection = document.querySelectorAll(".skills-section");
+
 for (let i = 0; i < skillsBtns.length; i++) {
     skillsBtns[i].addEventListener('click', function () {
-        skillsSection[i].classList.toggle('expended')
+        skillsSection[i].classList.toggle('expended');
+        let iconPlus = skillsBtns[i].querySelector('.fa-plus');
+        let iconMinus = skillsBtns[i].querySelector('.fa-window-minimize');
+        if (iconPlus) {
+            iconPlus.classList.remove('fa-plus');
+            iconPlus.classList.add('fa-window-minimize');
+            iconPlus.style.marginTop = '-10px';
+        } else if (iconMinus) {
+            iconMinus.classList.remove('fa-window-minimize');
+            iconMinus.classList.add('fa-plus');
+            iconMinus.style.marginTop = '0';
+        }
     })
 }
 // FAQ SHOW ALL END //
@@ -83,17 +104,20 @@ const popupJoin = document.querySelector('.popup-join')
 const popupForm = document.querySelector('.popup-form')
 const popupDone = document.querySelector('.popup-done')
 const doneBtn = document.querySelector('.done-btn')
+const body = document.querySelector('body')
 
 for (let i = 0; i < openModal.length; i++) {
     openModal[i].addEventListener('click', function (event) {
         popupSection.classList.toggle('d-block');
         overlay.classList.toggle('d-block');
+        body.style.overflow = "hidden"
         event.preventDefault();
     });
 }
 overlay.addEventListener('click', function () {
     popupSection.classList.toggle('d-block');
     overlay.classList.toggle('d-block');
+    body.style.overflow = "auto"
 });
 
 
@@ -102,6 +126,7 @@ if (closeButton) {
         e.preventDefault()
         popupSection.classList.toggle('d-block');
         overlay.classList.toggle('d-block');
+        body.style.overflow = "auto"
     })
 }
 
@@ -110,6 +135,7 @@ if (popupJoin) {
         e.preventDefault()
         popupForm.classList.toggle('d-none');
         popupDone.classList.toggle('d-none');
+        body.style.overflow = "auto"
     })
 }
 
@@ -118,6 +144,7 @@ if (doneBtn) {
         e.preventDefault()
         popupSection.classList.toggle('d-block');
         overlay.classList.toggle('d-block');
+        body.style.overflow = "auto"
     });
 }
 //  POPUP END //
@@ -256,6 +283,7 @@ blur.addEventListener('click', function () {
     mediaRightMenu.style.right = "-400px";
 });
 //  Menu in right END //
+
 
 
 
@@ -475,14 +503,14 @@ for (let i = 0; i < inputs.length; i++) {
     let input = inputs[i];
     window.intlTelInput(input, {
         initialCountry: "ru",
+        separateDialCode: true,
         preferredCountries: ["ru", "us", "gb", "de"],
         utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.2/build/js/utils.js"
     });
 }
 
-
-
-
-
-
-
+$('.way-section').click((e) => {
+    const href = e.currentTarget.dataset.href
+    if (href)
+        window.location.href = href
+})

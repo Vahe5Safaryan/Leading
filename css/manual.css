@@ -22,7 +22,7 @@ body{
 .header-section{
     position: fixed;
     top: 0;
-    left: 50px;
+    left: 3%;
     -webkit-transform: translate(-3%, 0);
     -ms-transform: translate(-3%, 0);
     transform: translate(-3%, 0);
@@ -61,6 +61,7 @@ body{
 }
 .header-section-btn{
     position: relative;
+    padding-top: 1px;
 }
 .header-section-btn-line{
     display: none;
@@ -173,7 +174,6 @@ body{
     margin-top: 10px;
 }
 
-
 .enginer-gradient{
     display: none;
 }
@@ -206,20 +206,6 @@ body{
     top: -25%;
 }
 
-.way-section-content {
-    max-width: 100%;
-    -webkit-box-align: self-end;
-    -ms-flex-align: self-end;
-    align-items: self-end;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    z-index: 2;
-}
 .hero-action a{
     margin: 0 20px 20px 0;
 }
@@ -789,8 +775,6 @@ body{
     display: inline-block;
 }
 
-
-
 .peoples-lives-box h4{
     font-weight: 400;
     font-size: 16px;
@@ -873,6 +857,15 @@ body{
     max-width: 100%;
     border: none;
     outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-box-btn button i{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding-right: 10px;
 }
 /* Skills End */
 
@@ -975,7 +968,8 @@ body{
 }
 .faq-section-accordion-heading i {
     position: absolute;
-    right: 10px;
+    right: 0;
+    top: 22px;
 }
 .faq-section-accordion-box h4{
     font-weight: 600;
@@ -1228,48 +1222,15 @@ body{
         -moz-column-gap: 80px;
         column-gap: 80px;
     }
+
+    .schedule-section {
+        -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+        justify-content: space-between;
+
+    }
 }
 @media screen and (max-width: 1024px) {
-    .header-section{
-        -webkit-transform: translate(-6%, 0);
-        -ms-transform: translate(-6%, 0);
-        transform: translate(-6%, 0);
-    }
-    .way-section-content {
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -webkit-column-gap: 60px;
-        -moz-column-gap: 60px;
-        column-gap: 60px;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        margin-top: 30px;
-        max-width: 100%;
-        z-index: 1;
-    }
-    .way-section-content-session ul{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-    }
-    .way-section-content-session ul li{
-        border-top: 1px solid rgba(255,255,255, 0.5);
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 1px;
-        text-transform: lowercase;
-        mix-blend-mode: normal;
-        opacity: 1;
-        padding: 11px 40px 0 0;
-        margin-right: 20px;
-    }
     .way-section{
         display: -ms-grid;
         display: grid;
@@ -1425,15 +1386,7 @@ body{
     .way {
         margin-bottom: 20px;
     }
-    .way-section-content-session ul{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-    }
+
     .way-section{
         padding: 30px 30px;
     }
@@ -1448,9 +1401,9 @@ body{
         font-size: 36px;
         line-height: 43px;
     }
-    .way-section-content-session{
-        margin-top: 0;
-    }
+    /*.way-section-content-session{*/
+    /*    margin-top: 0;*/
+    /*}*/
     .way-section-text {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -1955,7 +1908,7 @@ body{
         padding: 0 10px;
     }
     .faq-section-accordion-text p{
-        padding: 10px 10px 20px;
+        padding: 0 10px 20px;
     }
 
 
@@ -2043,12 +1996,17 @@ body{
     }
     .header-section {
         padding: 10px 20px;
-        left: 25px;
     }
     .header-section-ships ul li {
         width: 140px;
     }
 
+
+    .way {
+        padding-top: 0;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
     .way-bg-ng-manual{
         background-position: top -30% right 45px;
         background-size: 359px 304px;
@@ -2077,11 +2035,7 @@ body{
     .way-section {
         padding: 20px 20px;
     }
-    .way-section-content {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
+
     .hero-action a {
         margin: 0 0 20px 0;
         width: 100%;
@@ -2192,7 +2146,7 @@ body{
     }
     .header-section {
         padding: 10px 20px;
-        left: 19px;
+        /*left: 19px;*/
     }
 }
 /* ****  MEDIA  END **** */

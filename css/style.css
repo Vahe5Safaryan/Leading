@@ -22,6 +22,19 @@ a{
 body {
     font-family: 'Golos Text', sans-serif;
     background: #fafafa;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+*{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 /* UTILIT START */
@@ -49,6 +62,10 @@ input, textarea {
 }
 .container-with-padding {
     padding: 0 60px;
+}
+
+.container-with-padding-l-none {
+    padding: 0 30px 0 0 !important;
 }
 
 .container-fluid {
@@ -183,6 +200,7 @@ input, textarea {
     display: none;
 }
 
+
 /* Margin top*/
 .mt10{margin-top: 10px;}
 .mt20{margin-top: 20px;}
@@ -271,6 +289,9 @@ input, textarea {
     .container-with-padding {
         padding: 0 20px;
     }
+    .container-with-padding-l-none {
+        padding: 0 30px 0 30px !important;
+    }
 }
 @media screen and (max-width: 320px) {
     .container-with-p-none{
@@ -295,6 +316,17 @@ input, textarea {
     right: 1%;
     z-index: 999;
 }
+
+.overflow-box{
+    pointer-events: none !important;
+}
+.way-bg-dev{
+    pointer-events: none !important;
+}
+.way-bg-foft{
+    pointer-events: none !important;
+}
+
 /* UTILIT END */
 
 /* HEADER SECTION START */
@@ -528,7 +560,7 @@ input, textarea {
     align-items: center;
     position: absolute;
     top: 40px;
-    right: 35px;
+    right: 50px;
 }
 .login a{
     display: -webkit-box;
@@ -1012,6 +1044,7 @@ input, textarea {
     padding: 60px 100px;
     background: #FF5555;
     border-radius: 10px;
+    z-index: 1;
 }
 
 .way-bg-ng{
@@ -1025,6 +1058,7 @@ input, textarea {
     background-position: bottom 50% left 55%;
     background-size: 824px 698px ;
     background-clip: padding-box;
+    z-index: -1;
 }
 
 .way-bg-soft{
@@ -1038,6 +1072,7 @@ input, textarea {
     background-position: bottom 20% left 32%;
     background-size: 561px 520px ;
     background-clip: padding-box;
+    z-index: -1;
 }
 
 .way-bg-dev{
@@ -1051,6 +1086,7 @@ input, textarea {
     background-position: bottom left 400px;
     background-size: 1193px 1023px;
     background-clip: padding-box;
+    z-index: -1;
 }
 
 .way-section-software{
@@ -1768,8 +1804,8 @@ input, textarea {
 .iti__country-list{
     position: absolute !important;
     max-width: 320px;
-    left: 48.5%;
-    top: 35%;
+    left: -8px;
+    top: 55px;
 }
 /* BOOTCAMP END */
 
@@ -1953,7 +1989,6 @@ input, textarea {
 .none-577{
     display: block;
 }
-
 /* FOOTER END */
 
 /* GRADIENT START */
@@ -2197,11 +2232,19 @@ input, textarea {
         margin: 5px;
     }
 
+    .way-text-box {
+        margin-left: -15px;
+    }
     .way-section{
         overflow: hidden;
-        padding: 60px 60px;
+        padding: 60px 40px;
+        height: 480px;
     }
 
+    .way-section-content{
+        max-width: 190px;
+        margin-right: 0;
+    }
     .way-section-img {
         max-height: 300px;
         display: -webkit-box;
@@ -2579,6 +2622,7 @@ input, textarea {
         right: 0;
     }
 
+
     .section-heading-way{
         padding-bottom: 32px;
     }
@@ -2631,6 +2675,16 @@ input, textarea {
         -ms-flex-direction: row;
         flex-direction: row;
     }
+    .way-section{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: auto;
+        grid-template-columns: auto;
+        padding: 35px 30px;
+        height: auto;
+        cursor: pointer;
+    }
+
     .way-section-content-session ul li{
         border-top: 1px solid rgba(255, 255, 255, 0.4);
         padding-top: 7px;
@@ -2641,14 +2695,6 @@ input, textarea {
         letter-spacing: 1px;
         text-transform: uppercase;
         mix-blend-mode: normal;
-        width: 100px;
-    }
-    .way-section{
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: auto;
-        grid-template-columns: auto;
-        padding: 35px 30px;
     }
     .way-action-btn {
         display: none;
@@ -2726,6 +2772,7 @@ input, textarea {
     .featured-section{
         padding: 60px 0;
     }
+
 }
 @media screen and (max-width: 630px) {
 
@@ -2823,7 +2870,7 @@ input, textarea {
         position: relative;
     }
     .input-primary {
-        width: 280px;
+        width: 300px;
         max-width: 100%;
     }
     .bootcamp-box-form-text {
@@ -2977,6 +3024,16 @@ input, textarea {
 
     span {
         white-space: nowrap;
+    }
+
+    .popup-section {
+        max-height: max-content;
+        height: 100vh;
+        left: 50%;
+        top: 50%;
+    }
+    .bootcamp-btn {
+        align-items: center;
     }
 }
 @media screen and (max-width: 414px) {
@@ -3150,6 +3207,7 @@ input, textarea {
     }
     .bootcamp-form input{
         max-width: 100%;
+        margin: auto;
     }
     .featured-img-resp {
         margin: 0 0 40px 0;
@@ -3211,6 +3269,10 @@ input, textarea {
 
     .nav-links {
         padding: 10px 10px;
+    }
+
+    .bootcamp-form {
+        text-align: center;
     }
 }
 @media screen and (max-width: 320px) {
