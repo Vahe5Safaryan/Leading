@@ -3025,15 +3025,23 @@ input, textarea {
     span {
         white-space: nowrap;
     }
-
     .popup-section {
-        max-height: max-content;
         height: 100vh;
+        max-height: 100%;
         left: 50%;
         top: 50%;
     }
+
     .bootcamp-btn {
         align-items: center;
+    }
+
+    .iti__country-list{
+        position: absolute !important;
+        max-width: 320px;
+        height: 350px;
+        left: 10px;
+        top: 55px;
     }
 }
 @media screen and (max-width: 414px) {
