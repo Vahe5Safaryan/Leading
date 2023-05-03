@@ -43,14 +43,14 @@ body{
 .blog-under-btn{
     padding-top: 20px;
 }
-.blog-under-btn a{
+.blog-under-btn h4{
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: #295AC2;
 }
 
-.blog-under-btn a i{
+.blog-under-btn h4 i{
     font-size: 11px;
     padding-left: 15px;
 }

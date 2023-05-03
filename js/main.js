@@ -43,14 +43,6 @@ $(".slider").slick({
 
 
 // FAQ SHOW ALL START //
-// let skillsBtns = document.getElementsByClassName("expend-button");
-// let skillsSection = document.querySelectorAll(".skills-section");
-// for (let i = 0; i < skillsBtns.length; i++) {
-//     skillsBtns[i].addEventListener('click', function () {
-//         skillsSection[i].classList.toggle('expended')
-//     })
-// }
-
 
 let skillsBtns = document.getElementsByClassName("expend-button");
 let skillsSection = document.querySelectorAll(".skills-section");
@@ -161,7 +153,7 @@ function handleNavScroll() {
             navLinksScroll.style.background = 'rgba(255, 255, 255, 0.8)';
             navLinksScroll.style.backdropFilter = 'blur(13.5914px)';
             navLinksScroll.style.webkitBackdropFilter = 'blur(13.5914px)';
-            navLinksScroll.style.width = '100%';
+            navLinksScroll.style.width = '';
 
             const mediaQuery = window.matchMedia('(max-width: 1024px)');
             if (mediaQuery.matches) {
@@ -200,9 +192,9 @@ window.addEventListener('scroll', function() {
         }
     }
 });
+
+
 //  Login icon position START //
-
-
 //  Header other menu scroll START //
 window.addEventListener('scroll', function() {
     let headerSection = document.querySelector('.header-section');
@@ -218,33 +210,35 @@ window.addEventListener('scroll', function() {
 
 
 //  Header section ships START //
-const headerSectionBtn = document.querySelector('.header-section-btn');
+const headerSectionBtn = document.querySelectorAll('.header-section-cours, .header-section-btn');
 const darkMode = document.querySelector('.dark-mode');
-
+console.log(headerSectionBtn)
 if (headerSectionBtn) {
-    headerSectionBtn.addEventListener("click", function (e) {
-        e.preventDefault()
-        const headerShips = document.querySelector('.header-section-ships')
-        if (headerShips) {
-            if (headerShips.style.display !== 'flex') {
-                headerShips.style.display = 'flex'
-            } else {
+    headerSectionBtn.forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+            e.preventDefault()
+            const headerShips = document.querySelector('.header-section-ships')
+            if (headerShips) {
+                if (headerShips.style.display !== 'flex') {
+                    headerShips.style.display = 'flex'
+                } else {
+                    headerShips.style.display = 'none'
+                }
+            }
+
+            if (darkMode) {
+                if (darkMode.style.display !== 'block') {
+                    darkMode.style.display = 'block'
+                } else {
+                    darkMode.style.display = 'none'
+                }
+            }
+
+            darkMode.addEventListener("click", function () {
                 headerShips.style.display = 'none'
-            }
-        }
-
-        if (darkMode) {
-            if (darkMode.style.display !== 'block') {
-                darkMode.style.display = 'block'
-            } else {
                 darkMode.style.display = 'none'
-            }
-        }
 
-        darkMode.addEventListener("click", function () {
-            headerShips.style.display = 'none'
-            darkMode.style.display = 'none'
-
+            })
         })
     })
 }
@@ -261,6 +255,7 @@ const blur = document.querySelector('.blur')
 for (let i = 0; i < primaryIcon.length; i++) {
     primaryIcon[i].addEventListener('click', function () {
         mediaRightMenu.style.right = "0px";
+        blur.classList.toggle('d-block');
     });
 }
 
@@ -274,7 +269,7 @@ for (let i = 0; i < menuMobile.length; i++) {
 headerSectionClosed.addEventListener('click', function () {
     if (headerSectionClosed) {
         mediaRightMenu.style.right = "-400px";
-        blur.classList.toggle('d-none');
+        blur.classList.toggle('d-block');
     }
 })
 
@@ -502,9 +497,9 @@ let inputs = document.getElementsByClassName("phone");
 for (let i = 0; i < inputs.length; i++) {
     let input = inputs[i];
     window.intlTelInput(input, {
-        initialCountry: "ru",
+        // initialCountry: "us",
         separateDialCode: true,
-        preferredCountries: ["ru", "us", "gb", "de"],
+        // preferredCountries: ["ru", "us", "gb", "de"],
         utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.2/build/js/utils.js"
     });
 }
@@ -520,10 +515,12 @@ $('.way-section').click((e) => {
 //  Scrol Width
 const scheduleSection = document.querySelector('.schedule-section');
 const overflowBox = document.querySelector('.overflow-box');
-scheduleSection.addEventListener('scroll', function() {
-    if (this.scrollLeft + this.clientWidth >= 980) {
-        overflowBox.style.display = 'none';
-    } else {
-        overflowBox.style.display = 'block';
-    }
-});
+if (scheduleSection) {
+    scheduleSection.addEventListener('scroll', function() {
+        if (this.scrollLeft + this.clientWidth >= 980) {
+            overflowBox.style.display = 'none';
+        } else {
+            overflowBox.style.display = 'block';
+        }
+    });
+}

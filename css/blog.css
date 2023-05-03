@@ -13,6 +13,9 @@ body{
     row-gap: 70px;
     column-gap: 30px;
 }
+.blog-section a{
+    display: block;
+}
 
 .blog-box{
    background: #fff;
@@ -20,6 +23,8 @@ body{
 }
 .blog-box img{
     display: inline-block;
+    max-width: 100%;
+    width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
