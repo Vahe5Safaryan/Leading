@@ -249,7 +249,7 @@ if (headerSectionBtn) {
 //  Menu in right START //
 const mediaRightMenu = document.querySelector('.media-right-menu')
 const menuMobile = document.querySelectorAll('.menu-mobile ')
-const primaryIcon = document.querySelectorAll('.primary-icon')
+const primaryIcon = document.querySelectorAll('.header-section-top .primary-icon')
 const headerSectionClosed = document.querySelector('.header-section-closed')
 const blur = document.querySelector('.blur')
 
@@ -260,12 +260,12 @@ for (let i = 0; i < primaryIcon.length; i++) {
     });
 }
 
-// for (let i = 0; i < menuMobile.length; i++) {
-//     menuMobile[i].addEventListener('click', function () {
-//         mediaRightMenu.style.right = "0px";
-//         blur.classList.toggle('d-block');
-//     });
-// }
+for (let i = 0; i < menuMobile.length; i++) {
+    menuMobile[i].addEventListener('click', function () {
+        mediaRightMenu.style.right = "0px";
+        blur.classList.toggle('d-block');
+    });
+}
 
 headerSectionClosed.addEventListener('click', function () {
     if (headerSectionClosed) {
