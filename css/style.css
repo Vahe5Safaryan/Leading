@@ -17,7 +17,20 @@ a {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-*::-webkit-scrollbar {
+/** ::-webkit-scrollbar {*/
+/*    display: none;*/
+/*}*/
+
+.peoples-lives-section::-webkit-scrollbar{
+    display: none;
+}
+.schedule-section::-webkit-scrollbar{
+    display: none;
+}
+.about-section::-webkit-scrollbar{
+    display: none;
+}
+.assistance-section::-webkit-scrollbar{
     display: none;
 }
 
@@ -589,7 +602,7 @@ input, textarea {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #999999;
-    padding: 0 10px;
+    padding-left: 10px;
 }
 /* Login Start */
 
@@ -3277,7 +3290,7 @@ input, textarea {
     }
 
     .nav-links {
-        padding: 10px 10px;
+        padding: 10px 0 10px 0;
     }
 
     .bootcamp-form {
