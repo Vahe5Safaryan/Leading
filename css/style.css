@@ -33,6 +33,9 @@ a {
 .assistance-section::-webkit-scrollbar{
     display: none;
 }
+.pacific-time::-webkit-scrollbar{
+    display: none;
+}
 
 
 body {
@@ -572,7 +575,7 @@ input, textarea {
     align-items: center;
     position: absolute;
     top: 40px;
-    right: 60px;
+    right: 65px !important;
 }
 .login a{
     display: -webkit-box;
@@ -1821,6 +1824,12 @@ input, textarea {
 .iti__divider{
     border: none !important;
 }
+.iti {
+    overflow: hidden;
+}
+.iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
+    top: -7px;
+}
 /* BOOTCAMP END */
 
 /* FOOTER START*/
@@ -2149,7 +2158,7 @@ input, textarea {
         padding-left: 15px;
     }
     .right-menu {
-        padding-right: 15px;
+        padding-right: 40px;
         width: auto;
     }
 
@@ -2190,7 +2199,7 @@ input, textarea {
     }
 
     .login {
-        right: 124px;
+        right: 155px !important;
     }
 }
 @media screen and (max-width: 1024px) {

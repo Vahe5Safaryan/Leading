@@ -979,7 +979,7 @@ body{
 .faq-section-accordion-heading i {
     position: absolute;
     right: 0;
-    top: 22px;
+    top: 27px;
 }
 .faq-section-accordion-box h4{
     font-weight: 600;
@@ -1802,10 +1802,8 @@ body{
         max-height: 230px;
      }
 
-
-    }
+}
     @media screen and (max-width: 630px) {
-
         .job-ready-section{
             display: -webkit-box;
             display: -ms-flexbox;
